@@ -333,3 +333,15 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ========== Hero5: 소리 켜기/끄기 버튼 ========== */
+.hero5-sound-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 5;
+  padding: 0.65rem 0.85rem;
+}
+.hero5-sound-btn .hero5-sound-icon {
+  font-size: 1.75rem;
+}

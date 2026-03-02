@@ -10,10 +10,18 @@ const VIDEO_SRC = "/assets/videos/main.mp4";
 export default function Hero5({ dark }) {
   const t = useTranslations("hero");
   const [showContent, setShowContent] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
   const handleVideoEnded = () => {
     setShowContent(true);
+  };
+
+  const toggleMute = () => {
+    if (!videoRef.current) return;
+    const next = !isMuted;
+    videoRef.current.muted = next;
+    setIsMuted(next);
   };
 
   // 비디오 종료 후 콘텐츠가 보이면 WOW.js 재실행 → .wow 요소들(AnimatedText 등) 애니메이션 적용
@@ -43,11 +51,22 @@ export default function Hero5({ dark }) {
           }}
           src={VIDEO_SRC}
           autoPlay
-          muted
+          muted={isMuted}
           playsInline
           onEnded={handleVideoEnded}
         />
       </div>
+      {/* 소리 켜기/끄기 버튼: 비디오 재생 중에만 표시 */}
+      {!showContent && (
+        <button
+          type="button"
+          onClick={toggleMute}
+          className="btn btn-mod btn-round btn-border light-content hero5-sound-btn"
+          aria-label={isMuted ? "소리 켜기" : "소리 끄기"}
+        >
+          <i className={`${isMuted ? "mi-volume-off" : "mi-volume-up"} hero5-sound-icon`} aria-hidden />
+        </button>
+      )}
       {/* 콘텐츠: 비디오 종료 후 마운트 + 페이드인 → WOW/AnimatedText가 새로 인식됨 */}
       {showContent && (
       <div
