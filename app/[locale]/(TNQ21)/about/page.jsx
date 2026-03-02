@@ -233,7 +233,7 @@ export default function TNQ21AboutPage() {
                 <SectionTitle caption="Organization" title="조직 현황" />
                 <div className="overflow-hidden">
                   <div
-                    className="d-none d-md-block wow scaleOutIn"
+                    className="wow scaleOutIn"
                     data-wow-duration="1.2s"
                     data-wow-offset={0}
                   >
@@ -243,25 +243,6 @@ export default function TNQ21AboutPage() {
                       width={1200}
                       height={676}
                       className="w-100"
-                    />
-                  </div>
-                  <div className="d-md-none">
-                    <Image
-                      src={`${ABOUT_IMG}/organization/조직도대표이사라인.jpg`}
-                      alt="조직도 대표이사 라인"
-                      width={800}
-                      height={450}
-                      className="w-100 mb-30 wow scaleOutIn"
-                      data-wow-duration="1.2s"
-                    />
-                    <Image
-                      src={`${ABOUT_IMG}/organization/조직도공장장라인.jpg`}
-                      alt="조직도 공장장 라인"
-                      width={800}
-                      height={450}
-                      className="w-100 wow scaleOutIn"
-                      data-wow-duration="1.2s"
-                      data-wow-offset={0}
                     />
                   </div>
                 </div>
