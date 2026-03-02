@@ -505,7 +505,7 @@ export default function Home7({ onePage = false, dark = false }) {
             </h2>
             <div className="section-line-gradient mx-auto mb-20" />
             <h3 className="section-title mb-40 mb-sm-30">
-              Say hello, and we?™ll start productive cooperation.
+              Say hello, and we?ï¿½ll start productive cooperation.
             </h3>
             <p className="text-gray mb-80 mb-sm-60">
               Quisque semper nisl et mi tincidunt, at vulputate nunc tincidunt.

@@ -61,14 +61,14 @@ export default function Header2({ links }) {
               >
                 <span className="btn-animate-y">
                   <span className="btn-animate-y-1">
-                    Let?™s talk{" "}
+                    Let?ï¿½s talk{" "}
                     <i
                       className="icon-arrow-right1 size-16"
                       aria-hidden="true"
                     ></i>
                   </span>
                   <span className="btn-animate-y-2" aria-hidden="true">
-                    Let?™s talk{" "}
+                    Let?ï¿½s talk{" "}
                     <i
                       className="icon-arrow-right1 size-16"
                       aria-hidden="true"

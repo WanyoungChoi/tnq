@@ -248,9 +248,9 @@ export default function Home3({ onePage = false, dark = false }) {
             </div>
             <div className="col-md-7">
               <p className="section-descr-large mb-0 wow fadeInUp">
-                We?™re open to talk to
+                We?ï¿½re open to talk to
                 <span className="mark-decoration-2">good people</span>. Just say
-                hello and we?™ll start a productive cooperation.
+                hello and we?ï¿½ll start a productive cooperation.
               </p>
             </div>
           </div>

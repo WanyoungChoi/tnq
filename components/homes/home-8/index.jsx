@@ -485,7 +485,7 @@ export default function Home8({
           <div className="row">
             <div className="col-11 col-sm-10">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> Let?™s Work </span>
+                <span className="d-block wow fadeRotateIn"> Let?ï¿½s Work </span>
                 <span className="d-block text-end wow fadeRotateIn">
                   Together
                 </span>

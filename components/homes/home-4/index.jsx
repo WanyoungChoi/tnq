@@ -420,11 +420,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-80 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Let?™s have a conversation
+                Let?ï¿½s have a conversation
               </h2>
               <p className="section-descr dark-white mb-0">
-                We?™re open to talking to good people. Just say hello, and we?™ll
-                start productive cooperation. Start your own success story.
+                We?ï¿½re open to talking to good people. Just say hello, and
+                we?ï¿½ll start productive cooperation. Start your own success
+                story.
               </p>
             </div>
           </div>{" "}
