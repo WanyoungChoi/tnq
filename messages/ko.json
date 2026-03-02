@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "회사소개",
+    "services": "서비스",
+    "portfolio": "포트폴리오",
+    "blog": "블로그",
+    "contact": "연락처"
+  },
+  "common": {
+    "readMore": "더보기",
+    "contactUs": "문의하기"
+  },
+  "menu": {
+    "about": "회사소개",
+    "business": "사업현황",
+    "equipment": "설비현황",
+    "customerCenter": "고객센터",
+    "video": "홍보영상",
+    "ceoMessage": "CEO인사말",
+    "history": "회사연혁",
+    "organization": "조직현황",
+    "patents": "특허현황",
+    "location": "오시는길",
+    "hotStampingDie": "HOT STAMPING DIE",
+    "coldStampingDie": "COLD STAMPING DIE",
+    "hotStampingTrimDie": "HOT STAMPING TRIM'G DIE",
+    "machining": "가공설비",
+    "trialRun": "시운전설비",
+    "heatTreatmentCoating": "열처리&코팅 설비",
+    "measurementInspection": "측정&검사설비",
+    "notice": "공지사항",
+    "productInquiry": "제품문의",
+    "contactUs": "CONTACT US",
+    "factory": "공장",
+    "hotStamping": "핫스템핑"
+  },
+  "hero": {
+    "title": "Global Standard Hot Stamping & Press Die Solution - TNQ Corporation",
+    "subtitle1": "끊임없는 기술 개발과 품질 혁신으로",
+    "subtitle2": "고객 만족을 실현하는 (주)TNQ입니다.",
+    "subtitleM1": "끊임없는 기술 개발과",
+    "subtitleM2": "품질 혁신으로",
+    "subtitleM3": "고객 만족을 실현하는",
+    "subtitleM4": "(주)TNQ입니다.",
+    "statusLine1": "성장하는 1류 기업",
+    "statusLine2": "주식회사 TNQ"
+  }
+}

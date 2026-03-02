@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス",
+    "portfolio": "ポートフォリオ",
+    "blog": "ブログ",
+    "contact": "お問い合わせ"
+  },
+  "common": {
+    "readMore": "続きを読む",
+    "contactUs": "お問い合わせ"
+  },
+  "menu": {
+    "about": "会社紹介",
+    "business": "事業現況",
+    "equipment": "設備現況",
+    "customerCenter": "お客様センター",
+    "video": "プロモーション映像",
+    "ceoMessage": "CEO挨拶",
+    "history": "会社沿革",
+    "organization": "組織現況",
+    "patents": "特許現況",
+    "location": "アクセス",
+    "hotStampingDie": "HOT STAMPING DIE",
+    "coldStampingDie": "COLD STAMPING DIE",
+    "hotStampingTrimDie": "HOT STAMPING TRIM'G DIE",
+    "machining": "加工設備",
+    "trialRun": "試運転設備",
+    "heatTreatmentCoating": "熱処理・コーティング設備",
+    "measurementInspection": "測定・検査設備",
+    "notice": "お知らせ",
+    "productInquiry": "製品お問い合わせ",
+    "contactUs": "CONTACT US",
+    "factory": "工場",
+    "hotStamping": "ホットスタンピング"
+  },
+  "hero": {
+    "title": "Global Standard Hot Stamping & Press Die Solution - TNQ Corporation",
+    "subtitle1": "絶え間ない技術開発と品質革新で、",
+    "subtitle2": "お客様の満足を実現する（株）TNQです。",
+    "subtitleM1": "絶え間ない技術開発と",
+    "subtitleM2": "品質革新で、",
+    "subtitleM3": "お客様の満足を実現する",
+    "subtitleM4": "（株）TNQです。",
+    "statusLine1": "成長する一流企業、",
+    "statusLine2": "株式会社TNQ"
+  }
+}

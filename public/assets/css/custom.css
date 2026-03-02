@@ -1,0 +1,335 @@
+/* Hero 비디오 종료 후 콘텐츠 페이드인 */
+@keyframes heroContentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero: TNQ만 3초 후 빨간색 */
+.tnq-red-after-3s {
+  font-size: 1.15em;
+  color: inherit;
+  animation: tnqTurnRed 0.4s ease 3s forwards;
+}
+@keyframes tnqTurnRed {
+  to {
+    color: #c00;
+  }
+}
+
+.Typewriter,
+.typewrite {
+  display: inline-block;
+}
+.typewrite {
+  margin-left: 10px;
+}
+.dark-mode .dark-white {
+  color: white !important;
+}
+.dark-mode-logo {
+  display: none;
+}
+.dark .dark-mode-logo {
+  display: block;
+}
+.light-mode-logo {
+  display: block;
+}
+.dark .light-mode-logo {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .mn-has-sub:hover + *,
+  .mn-has-sub + *:hover {
+    display: block !important;
+    z-index: 1;
+  }
+}
+
+.fadeInText {
+  animation: animationFadeText 0.5s linear 0s 1;
+}
+@keyframes animationFadeText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dark-mode .svg-shape {
+  filter: invert(1) brightness(2); /* Inverts the colors and increases brightness */
+}
+.dark-mode .svg-dark {
+  filter: invert(1) brightness(2); /* Inverts the colors and increases brightness */
+}
+.dark-mode .image-filter {
+  filter: invert(1) brightness(2); /* Inverts the colors and increases brightness */
+}
+html {
+  scroll-behavior: initial !important;
+}
+a {
+  cursor: pointer;
+}
+.mobile-on .desktop-nav {
+  height: fit-content;
+  max-height: 0px;
+  display: block !important;
+  overflow: scroll;
+  transition: 0.6s;
+}
+
+@media (min-width: 1025px) {
+  .mobile-on .mn-sub {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .mobile-on .js-opened .mn-sub.mobile-sub-active {
+    max-height: 1000px;
+  }
+}
+.dark-mode .form .form-tip-2 {
+  color: var(--color-dark-mode-gray-1);
+  background-color: var(--color-dark-2) !important;
+}
+.btn-mod.btn-w:hover,
+.btn-mod.btn-w:focus {
+  background: none !important;
+}
+@media (max-width: 500px) {
+  .team-carousel .owl-prev.owl-prev-testimonial-1 {
+    left: 21px;
+  }
+}
+
+.mn-sub {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mn-sub.open {
+  max-height: 200px;
+  overflow: auto !important;
+  opacity: 1 !important;
+}
+
+/* 1뎁스 메뉴: 21px */
+.inner-nav > ul > li:not(.languageSelect) > a {
+  font-size: 21px;
+}
+
+/* 2뎁스 메뉴: 17px, 영역 너비 확대(줄바꿈 방지) */
+.inner-nav ul li .mn-sub li a,
+.mn-sub li a {
+  font-size: 17px;
+}
+.mn-sub {
+  width: 280px;
+}
+.mn-sub-multi {
+  width: 280px !important;
+}
+
+/* 언어 선택: 트리거 약간 축소, 하위 메뉴 14px·너비 절반 */
+.languageSelect .mn-has-sub {
+  font-size: 13px;
+}
+.languageSelect .mn-sub {
+  width: 84px;
+}
+.languageSelect .mn-sub li a {
+  font-size: 17px;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* About 페이지: 첫 섹션 히어로 배너 높이 */
+.about-hero-banner .page-section {
+  min-height: 200px;
+}
+.about-hero-banner-inner {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About 페이지: 연혁 테이블·스트립·특허 호버 */
+.about-history-table {
+  min-width: 320px;
+}
+.about-history-table th,
+.about-history-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 767px) {
+  .about-history-table thead {
+    display: none;
+  }
+  .about-history-table tr {
+    display: block;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .about-history-table td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem 1rem;
+  }
+  .about-history-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+  }
+}
+.about-history-strip {
+  height: 180px;
+}
+.about-history-strip-inner {
+  animation: aboutHistoryScroll 40s linear infinite;
+  width: max-content;
+}
+.about-history-strip-item {
+  width: 280px;
+  height: 180px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+@keyframes aboutHistoryScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.about-patent-reveal {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.about-patent-item:hover .about-patent-reveal {
+  opacity: 1;
+}
+
+/* section-descr 글자 크기 약간 확대 (Future Strategy 문단 등) */
+.section-descr {
+  font-size: 1.5em !important;
+}
+
+/* Our Factory 인용문 = Future Strategy 문단과 동일 크기 (rem으로 부모 영향 제거) */
+.team-factory-quote .section-descr {
+  font-size: 1.5rem !important;
+}
+
+/* 서비스 탭 목록 글자 추가 확대 */
+.services-tabs--larger.section-descr,
+.services-tabs--larger .section-descr {
+  font-size: 1.7em !important;
+}
+
+/* Contact 섹션 상단 문구 글자 작게 */
+.contact-intro-title.section-title {
+  font-size: 1.5em !important;
+}
+
+/* 푸터 흰색 테두리 (좌우 30px 여백, Scroll to top은 테두리 밖) */
+.footer--white-border {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer--white-border .row {
+  padding-bottom: 30px !important;
+}
+.footer.dark .footer--white-border {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========== Business 페이지: 텍스트 영역 = 레이어(박스) = business-text-wrap에 적용 ========== */
+.business-content-block .business-text-wrap {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 0.75rem 1.25rem !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  line-height: 1.4;
+}
+.business-content-block .business-text-wrap .business-text-title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.05em;
+}
+.business-content-block .business-text-wrap .text-gray {
+  margin: 0;
+}
+.business-content-block .business-text-wrap .business-block-list {
+  padding-left: 1rem;
+  margin: 0;
+  list-style: none;
+}
+.business-content-block .business-text-wrap .business-block-list li {
+  margin-bottom: 0.15rem;
+  line-height: 1.5;
+}
+
+/* 블록(이미지+텍스트 쌍) 사이 구분선 */
+.business-content-block {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.business-content-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* 모바일: 텍스트 먼저, 이미지 나중 + 간격 줄임 */
+@media (max-width: 991px) {
+  .business-content-block .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .business-content-block .business-block-img-col {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0.4rem;
+  }
+  .business-content-block .business-block-text-col {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .business-content-block .business-text-wrap {
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* ========== Video 페이지: YouTube Shorts 세로 비율 ========== */
+.tnq-video-shorts-wrap {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}

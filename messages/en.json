@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Read More",
+    "contactUs": "Contact Us"
+  },
+  "menu": {
+    "about": "About Us",
+    "business": "Business",
+    "equipment": "Equipment",
+    "customerCenter": "Customer Center",
+    "video": "Promotional Video",
+    "ceoMessage": "CEO Message",
+    "history": "History",
+    "organization": "Organization",
+    "patents": "Patents",
+    "location": "Location",
+    "hotStampingDie": "HOT STAMPING DIE",
+    "coldStampingDie": "COLD STAMPING DIE",
+    "hotStampingTrimDie": "HOT STAMPING TRIM'G DIE",
+    "machining": "Machining",
+    "trialRun": "Trial Run",
+    "heatTreatmentCoating": "Heat Treatment & Coating",
+    "measurementInspection": "Measurement & Inspection",
+    "notice": "Notice",
+    "productInquiry": "Product Inquiry",
+    "contactUs": "CONTACT US",
+    "factory": "Factory",
+    "hotStamping": "Hot Stamping"
+  },
+  "hero": {
+    "title": "Global Standard Hot Stamping & Press Die Solution - TNQ Corporation",
+    "subtitle1": "With continuous technology development and quality innovation,",
+    "subtitle2": "we deliver customer satisfaction. TNQ Corporation",
+    "subtitleM1": "With continuous technology development",
+    "subtitleM2": "and quality innovation,",
+    "subtitleM3": "we deliver customer satisfaction.",
+    "subtitleM4": "TNQ Corporation",
+    "statusLine1": "A growing first-class company,",
+    "statusLine2": "TNQ Corporation"
+  }
+}
