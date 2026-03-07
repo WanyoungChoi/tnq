@@ -1,5 +1,3 @@
-import AnimatedText from "@/components/common/AnimatedText";
-import Image from "next/image";
 import React from "react";
 
 export default function Service() {
@@ -17,226 +15,37 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <ul
-            className="nav nav-tabs services-tabs section-descr services-tabs--larger wow fadeInUp"
+          <div
+            className="section-descr wow fadeInUp services-strategy-list"
             data-wow-delay="0.55s"
-            role="tablist"
           >
-            <li role="presentation">
-              <a
-                href="#services-item-1"
-                className="active"
-                aria-controls="services-item-1"
-                role="tab"
-                aria-selected="true"
-                data-bs-toggle="tab"
-              >
-                브랜드 전략 <span className="number">01</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="#services-item-1"
-                aria-controls="services-item-1"
-                role="tab"
-                aria-selected="true"
-                data-bs-toggle="tab"
-              >
-                스마트 공정 시스템 도입 <span className="number">01</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="#services-item-2"
-                aria-controls="services-item-2"
-                role="tab"
-                aria-selected="false"
-                data-bs-toggle="tab"
-              >
-                자동화·디지털 전환 확대<span className="number">02</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="#services-item-3"
-                aria-controls="services-item-3"
-                role="tab"
-                aria-selected="false"
-                data-bs-toggle="tab"
-              >
-                친환경 생산 프로세스<span className="number">03</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="#services-item-4"
-                aria-controls="services-item-4"
-                role="tab"
-                aria-selected="false"
-                data-bs-toggle="tab"
-              >
-                글로벌 시장 확대 전략 <span className="number">04</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="#services-item-6"
-                aria-controls="services-item-6"
-                role="tab"
-                aria-selected="false"
-                data-bs-toggle="tab"
-              >
-                물류 자동화 시스템 도입 <span className="number">06</span>
-              </a>
-            </li>
-          </ul>
+            <h4 className="services-strategy-title mb-30">브랜드 전략</h4>
+            <ul className="list-unstyled mb-0 text-gray">
+              <li>데이터베이스 확립으로 기술력 축적</li>
+              <li>표준화 및 문서화로 실무 적극 활용</li>
+              <li>무인가동 및 자동화로 스마트공정 도입</li>
+              <li>기술교육을 통한 업계 경쟁력 강화</li>
+              <li>지속적인 R&D투자로 신규사업 유치</li>
+              <li>글로벌 시장 대응을 위한 전략 수립</li>
+            </ul>
+          </div>
         </div>
         <div
           className="col-lg-6 d-flex wow fadeInLeft"
           data-wow-delay="0.55s"
           data-wow-offset={275}
         >
-          <div className="tab-content services-content">
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item show fade active"
-              id="services-item-1"
-              role="tabpanel"
-            >
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/tnq21/main/future-1.png"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item fade"
-              id="services-item-2"
-              role="tabpanel"
-            >
-              <div className="services-text">
-                <div className="services-text-container">
-                  <h4 className="services-title">Art Direction</h4>
-                  <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
-                  </p>
-                </div>
-              </div>
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/services/service-2.jpg"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item fade"
-              id="services-item-3"
-              role="tabpanel"
-            >
-              <div className="services-text">
-                <div className="services-text-container">
-                  <h4 className="services-title">Creative Design</h4>
-                  <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
-                  </p>
-                </div>
-              </div>
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/services/service-3.jpg"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item fade"
-              id="services-item-4"
-              role="tabpanel"
-            >
-              <div className="services-text">
-                <div className="services-text-container">
-                  <h4 className="services-title">Development</h4>
-                  <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
-                  </p>
-                </div>
-              </div>
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/services/service-4.jpg"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item fade"
-              id="services-item-5"
-              role="tabpanel"
-            >
-              <div className="services-text">
-                <div className="services-text-container">
-                  <h4 className="services-title">Photography</h4>
-                  <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
-                  </p>
-                </div>
-              </div>
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/services/service-5.jpg"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
-            {/* Tab Content */}
-            <div
-              className="tab-pane services-content-item fade"
-              id="services-item-6"
-              role="tabpanel"
-            >
-              <div className="services-text">
-                <div className="services-text-container">
-                  <h4 className="services-title">Marketing</h4>
-                  <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
-                  </p>
-                </div>
-              </div>
-              <Image
-                width={945}
-                height={1016}
-                className="services-image"
-                src="/assets/images/services/service-6.jpg"
-                alt="Image Description"
-              />
-            </div>
-            {/* End Tab Content */}
+          <div className="services-content position-relative overflow-hidden rounded">
+            <video
+              src="/assets/videos/brand_strat.mp4"
+              className="services-image w-100"
+              style={{ objectFit: "cover", display: "block" }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="CEO 오피스"
+            />
           </div>
         </div>
       </div>

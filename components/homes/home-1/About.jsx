@@ -6,14 +6,17 @@ export default function About() {
     <div className="row wow fadeInUp" data-wow-delay="0.5s">
       <div className="col-lg-6 mb-md-60">
         <div className="position-relative">
-          {/* Image */}
+          {/* Video */}
           <div className="position-relative overflow-hidden">
-            <Image
-              width={960}
-              height={539}
-              src="/assets/images/tnq21/main/ceopicmain.png"
-              className="image-fullwidth relative"
-              alt="Image Description"
+            <video
+              src="/assets/videos/ceo_worker_vertical.mp4"
+              className="image-fullwidth w-100"
+              style={{ objectFit: "cover", aspectRatio: "16/9" }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="CEO 및 현장"
             />
             {/* 가장자리 어두운 비네팅 */}
             <div
@@ -26,7 +29,7 @@ export default function About() {
               aria-hidden
             />
           </div>
-          {/* End Image */}
+          {/* End Video */}
           {/* Decorative Waves */}
           <div
             className="decoration-1 d-none d-sm-block"

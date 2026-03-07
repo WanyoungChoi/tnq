@@ -125,12 +125,15 @@ export default function TNQ21AboutPage() {
                       className="position-relative overflow-hidden wow fadeInUp"
                       data-wow-duration="1.2s"
                     >
-                      <Image
-                        src={`${ABOUT_IMG}/ceo_greetings/ceogreeting2.png`}
-                        alt="CEO 인사말"
-                        width={500}
-                        height={692}
+                      <video
+                        src="/assets/videos/ceo_office_vertical.mp4"
                         className="w-100 h-auto"
+                        style={{ display: "block", objectFit: "cover" }}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        aria-label="CEO 인사말"
                       />
                       <div
                         className="position-absolute top-0 start-0 end-0 bottom-0 pointer-events-none"

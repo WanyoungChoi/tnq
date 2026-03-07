@@ -334,6 +334,21 @@ html {
   margin-right: auto;
 }
 
+/* ========== Hero5: 바깥→안쪽 검정 그라데이션 오버레이 ========== */
+.hero5-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 75% 75% at 50% 50%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.7) 65%,
+    rgba(0, 0, 0, 0.9) 82%,
+    #000 100%
+  );
+}
+
 /* ========== Hero5: 소리 켜기/끄기 버튼 ========== */
 .hero5-sound-btn {
   position: absolute;
