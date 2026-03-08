@@ -51,13 +51,13 @@ export default function Contact({ showContactItems = true }) {
               <div className="col-md-6">
                 {/* Name */}
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">이름</label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     className="input-lg round form-control"
-                    placeholder="Enter your name"
+                    placeholder="본명이 아닌 가명으로 입력해 주세요"
                     pattern=".{3,100}"
                     required
                     aria-required="true"
@@ -67,13 +67,13 @@ export default function Contact({ showContactItems = true }) {
               <div className="col-md-6">
                 {/* Email */}
                 <div className="form-group">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">이메일</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     className="input-lg round form-control"
-                    placeholder="Enter your email"
+                    placeholder="이메일을 입력하세요"
                     pattern=".{5,100}"
                     required
                     aria-required="true"
@@ -83,13 +83,13 @@ export default function Contact({ showContactItems = true }) {
             </div>
             {/* Message */}
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">문의내용</label>
               <textarea
                 name="message"
                 id="message"
                 className="input-lg round form-control"
                 style={{ height: 130 }}
-                placeholder="Enter your message"
+                placeholder="문의 내용을 입력하세요"
                 defaultValue={""}
               />
             </div>
@@ -98,9 +98,7 @@ export default function Contact({ showContactItems = true }) {
                 {/* Inform Tip */}
                 <div className="form-tip pt-20 pt-sm-0">
                   <i className="icon-info size-16" />
-                  All the fields are required. By sending the form you agree to
-                  the <a href="#">Terms &amp; Conditions</a> and{" "}
-                  <a href="#">Privacy Policy</a>.
+                  개인정보를 수집하지 않습니다. 문의 내용에 개인정보를 입력하지 마십시오.
                 </div>
               </div>
               <div className="col-sm-6">
@@ -114,7 +112,7 @@ export default function Contact({ showContactItems = true }) {
                     data-link-animate="y"
                   >
                     <span className="link-strong link-strong-unhovered">
-                      Send Message
+                      문의 발송하기
                       <i
                         className="mi-arrow-right size-18 align-middle"
                         aria-hidden="true"
@@ -124,7 +122,7 @@ export default function Contact({ showContactItems = true }) {
                       className="link-strong link-strong-hovered"
                       aria-hidden="true"
                     >
-                      Send Message
+                      문의 발송하기
                       <i
                         className="mi-arrow-right size-18 align-middle"
                         aria-hidden="true"

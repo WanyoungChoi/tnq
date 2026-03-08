@@ -12,6 +12,7 @@ export const menuTNQ21 = [
           { href: "/about#history", text: "history" },
           { href: "/about#organization", text: "organization" },
           { href: "/about#patents", text: "patents" },
+          { href: "/about#customers", text: "mainCustomers" },
           { href: "/about#location", text: "location" },
         ],
       },
@@ -43,23 +44,24 @@ export const menuTNQ21 = [
     ],
   },
   {
-    title: "customerCenter",
-    subMenu: [
-      {
-        links: [
-          { href: "/customer-center/notice", text: "notice" },
-          { href: "/customer-center/product-inquiry", text: "productInquiry" },
-        ],
-      },
-    ],
-  },
-  {
     title: "video",
     subMenu: [
       {
         links: [
           { href: "/video#factory", text: "factory" },
           { href: "/video#hot-stamping", text: "hotStamping" },
+          { href: "/video/gallery", text: "gallery" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "customerCenter",
+    subMenu: [
+      {
+        links: [
+          { href: "/customer-center/notice", text: "notice" },
+          { href: "/customer-center/product-inquiry", text: "productInquiry" },
         ],
       },
     ],

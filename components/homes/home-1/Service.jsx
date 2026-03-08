@@ -19,14 +19,13 @@ export default function Service() {
             className="section-descr wow fadeInUp services-strategy-list"
             data-wow-delay="0.55s"
           >
-            <h4 className="services-strategy-title mb-30">브랜드 전략</h4>
             <ul className="list-unstyled mb-0 text-gray">
-              <li>데이터베이스 확립으로 기술력 축적</li>
-              <li>표준화 및 문서화로 실무 적극 활용</li>
-              <li>무인가동 및 자동화로 스마트공정 도입</li>
-              <li>기술교육을 통한 업계 경쟁력 강화</li>
-              <li>지속적인 R&D투자로 신규사업 유치</li>
-              <li>글로벌 시장 대응을 위한 전략 수립</li>
+              <li>- 데이터베이스 확립으로 기술력 축적</li>
+              <li>- 표준화 및 문서화로 실무 적극 활용</li>
+              <li>- 무인가동 및 자동화로 스마트공정 도입</li>
+              <li>- 기술교육을 통한 업계 경쟁력 강화</li>
+              <li>- 지속적인 R&D투자로 신규사업 유치</li>
+              <li>- 글로벌 시장 대응을 위한 전략 수립</li>
             </ul>
           </div>
         </div>

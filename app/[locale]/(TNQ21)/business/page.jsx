@@ -183,7 +183,7 @@ const HSDIE2_BLOCKS = [
 // ——— Section 4: COLD STAMPING DIE - 기술업무 (CSDIE1) — image001↔1번, ...
 const CSDIE1_BLOCKS = [
   {
-    imageSrc: `${B}/CSDIE1/image001.png`,
+    imageSrc: `${B}/CSDIE1/image001.jpg`,
     title: "1.성형 해석",
     items: [
       "주변형률 점검(강성)",
@@ -222,7 +222,7 @@ const CSDIE1_BLOCKS = [
     ],
   },
   {
-    imageSrc: `${B}/CSDIE1/image004.png`,
+    imageSrc: `${B}/CSDIE1/image004.jpg`,
     title: "4.공정 설계",
     items: [
       "레이아웃에서 결정된 각 공정설계",
@@ -337,7 +337,7 @@ export default function TNQ21BusinessPage() {
                             className="wow charsAnimIn"
                             data-splitting="chars"
                           >
-                            <AnimatedText text="Precision molds, crafted with care. Powered by people. Driven by trust." />
+                            <AnimatedText text="정밀 제조 기술로 고객 가치를 만들어갑니다." />
                           </span>
                         </h1>
                       </div>
@@ -354,7 +354,7 @@ export default function TNQ21BusinessPage() {
             >
               <div className="container">
                 <SectionTitle
-                  caption="HS DIE"
+                  caption="HPF DIE"
                   title="HOT STAMPING DIE - 기술업무"
                 />
                 {HSDIE1_BLOCKS.map((block, i) => (
@@ -374,7 +374,7 @@ export default function TNQ21BusinessPage() {
             <section className="scrollSpysection page-section bg-dark-1 light-content">
               <div className="container">
                 <SectionTitle
-                  caption="HS DIE"
+                  caption="HPF DIE"
                   title="HOT STAMPING DIE - 생산업무"
                 />
                 {HSDIE2_BLOCKS.map((block, i) => (
@@ -413,7 +413,27 @@ export default function TNQ21BusinessPage() {
               </div>
             </section>
 
-            {/* 5. HOT STAMPING TRIM'G DIE - 기술업무 (메뉴 앵커: hot-stamping-trim-die) */}
+            {/* 5. COLD STAMPING DIE - 생산업무 */}
+            <section className="scrollSpysection page-section bg-dark-2 light-content">
+              <div className="container">
+                <SectionTitle
+                  caption="CS DIE"
+                  title="COLD STAMPING DIE - 생산업무"
+                />
+                {CSDIE2_BLOCKS.map((block, i) => (
+                  <BusinessContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={`COLD STAMPING DIE 생산업무 ${i + 1}`}
+                    title={block.title}
+                  >
+                    <ItemList items={block.items} />
+                  </BusinessContentBlock>
+                ))}
+              </div>
+            </section>
+
+            {/* 6. HOT STAMPING TRIM'G DIE - 기술업무 (메뉴 앵커: hot-stamping-trim-die) */}
             <section
               id="hot-stamping-trim-die"
               className="scrollSpysection page-section bg-dark-1 light-content"
@@ -436,25 +456,7 @@ export default function TNQ21BusinessPage() {
               </div>
             </section>
 
-            {/* 6. COLD STAMPING DIE - 생산업무 */}
-            <section className="scrollSpysection page-section bg-dark-2 light-content">
-              <div className="container">
-                <SectionTitle
-                  caption="CS DIE"
-                  title="COLD STAMPING DIE - 생산업무"
-                />
-                {CSDIE2_BLOCKS.map((block, i) => (
-                  <BusinessContentBlock
-                    key={i}
-                    imageSrc={block.imageSrc}
-                    imageAlt={`COLD STAMPING DIE 생산업무 ${i + 1}`}
-                    title={block.title}
-                  >
-                    <ItemList items={block.items} />
-                  </BusinessContentBlock>
-                ))}
-              </div>
-            </section>
+
           </main>
           <Footer1 dark />
         </div>

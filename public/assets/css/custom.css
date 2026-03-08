@@ -20,6 +20,11 @@
   }
 }
 
+/* FAQ 답변: 문자열 내 \n을 브라우저에서 줄바꿈으로 표시 */
+.faqAnswer {
+  white-space: pre-line;
+}
+
 .Typewriter,
 .typewrite {
   display: inline-block;
@@ -102,6 +107,14 @@ a {
 .btn-mod.btn-w:focus {
   background: none !important;
 }
+/* Our Factory & Technology: 이미지 3:2 비율, 1개씩 표시 */
+.team-factory-image-3-2 {
+  position: relative;
+  overflow: hidden;
+}
+.team-factory-image-3-2 img {
+  object-fit: cover;
+}
 @media (max-width: 500px) {
   .team-carousel .owl-prev.owl-prev-testimonial-1 {
     left: 21px;
@@ -163,33 +176,65 @@ html {
   justify-content: center;
 }
 
-/* About 페이지: 연혁 테이블·스트립·특허 호버 */
-.about-history-table {
-  min-width: 320px;
+/* About 페이지: 연혁 섹션 배경 (옅게) */
+.about-history-section {
+  position: relative;
 }
-.about-history-table th,
-.about-history-table td {
-  padding: 0.75rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.about-history-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/images/tnq21/about/history/history_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* About 페이지: 연혁 리스트 (다크 모드 세련된 폼) */
+.about-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.about-history-item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1.5rem 2rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background-color 0.2s ease;
+}
+.about-history-item:last-child {
+  border-bottom: none;
+}
+.about-history-item:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.about-history-year {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.55);
+}
+.about-history-desc {
+  font-size: 1.4rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
 }
 @media (max-width: 767px) {
-  .about-history-table thead {
-    display: none;
+  .about-history-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.875rem 0;
   }
-  .about-history-table tr {
-    display: block;
-    margin-bottom: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+  .about-history-year {
+    font-size: 1.0625rem;
+    color: rgba(255, 255, 255, 0.5);
   }
-  .about-history-table td {
-    display: block;
-    text-align: right;
-    padding: 0.5rem 1rem;
-  }
-  .about-history-table td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: 600;
+  .about-history-desc {
+    font-size: 1.125rem;
   }
 }
 .about-history-strip {

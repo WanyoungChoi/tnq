@@ -175,7 +175,7 @@ export default function TNQ21EquipmentPage() {
                       <div className="col-md-8 offset-md-2">
                         <h1 className="hs-title-1 mb-0">
                           <span className="wow charsAnimIn" data-splitting="chars">
-                            <AnimatedText text="Precision molds, crafted with care. Powered by people. Driven by trust." />
+                            <AnimatedText text="정밀도를 완성하는 기술과 설비" />
                           </span>
                         </h1>
                       </div>

@@ -62,7 +62,7 @@ export default function TNQ21VideoPage() {
                       <div className="col-md-8 offset-md-2">
                         <h1 className="hs-title-1 mb-20">
                           <span className="wow charsAnimIn" data-splitting="chars">
-                            <AnimatedText text="Video" />
+                            <AnimatedText text="영상으로 보는 우리의 기술과 현장" />
                           </span>
                         </h1>
                       </div>

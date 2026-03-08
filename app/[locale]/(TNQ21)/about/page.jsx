@@ -52,10 +52,21 @@ const HISTORY_ROWS = [
   { year: "2025", desc: "김정호 대표이사 취임" },
 ];
 
-const HISTORY_IMGS = Array.from(
-  { length: 13 },
-  (_, i) => `image${String(i + 3).padStart(3, "0")}.png`,
-);
+const HISTORY_IMGS = [
+  "hyundaimotor.jpg",
+  "image003.png",
+  "hyundaisteel.jpg",
+  "image005.png",
+  "gm.jpg",  
+  "image006.png",
+  "image007.png",
+  "image008.png",
+  "image009.png",
+  "image010.png",
+  "image011.png",
+  "image012.png",
+
+];
 
 const PATENT_ITEMS = [
   { img: "image001.jpg", label: "한국" },
@@ -102,7 +113,7 @@ export default function TNQ21AboutPage() {
                             className="wow charsAnimIn"
                             data-splitting="chars"
                           >
-                            <AnimatedText text="Precision molds, crafted with care. Powered by people. Driven by trust." />
+                            <AnimatedText text="사람과 기술, 그리고 신뢰로 성장합니다." />
                           </span>
                         </h1>
                       </div>
@@ -168,60 +179,24 @@ export default function TNQ21AboutPage() {
             {/* 3. 회사 연혁 */}
             <section
               id="history"
-              className="scrollSpysection page-section bg-dark-1 light-content"
+              className="scrollSpysection page-section bg-dark-1 light-content about-history-section"
             >
-              <div className="container">
+              <div
+                className="about-history-bg"
+                aria-hidden
+              />
+              <div className="container position-relative">
                 <SectionTitle caption="History" title="회사 연혁" />
                 <div className="row justify-content-center">
-                  <div className="col-12 overflow-x-auto">
-                    <table className="table table-dark table-responsive about-history-table mb-50">
-                      <thead>
-                        <tr>
-                          <th>년도</th>
-                          <th>주요 연혁</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {HISTORY_ROWS.map((row, i) => (
-                          <tr key={i}>
-                            <td data-label="년도">{row.year}</td>
-                            <td data-label="주요 연혁">{row.desc}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="about-history-strip position-relative overflow-hidden">
-                  <div className="about-history-strip-inner d-flex">
-                    {HISTORY_IMGS.map((name, i) => (
-                      <div
-                        key={i}
-                        className="about-history-strip-item flex-shrink-0"
-                      >
-                        <Image
-                          src={`${ABOUT_IMG}/history/${name}`}
-                          alt={`연혁 ${i + 1}`}
-                          width={280}
-                          height={180}
-                          className="object-fit-cover"
-                        />
-                      </div>
-                    ))}
-                    {HISTORY_IMGS.map((name, i) => (
-                      <div
-                        key={`dup-${i}`}
-                        className="about-history-strip-item flex-shrink-0"
-                      >
-                        <Image
-                          src={`${ABOUT_IMG}/history/${name}`}
-                          alt=""
-                          width={280}
-                          height={180}
-                          className="object-fit-cover"
-                        />
-                      </div>
-                    ))}
+                  <div className="col-12 col-lg-10 col-xl-8">
+                    <div className="about-history-list">
+                      {HISTORY_ROWS.map((row, i) => (
+                        <div key={i} className="about-history-item">
+                          <span className="about-history-year">{row.year}</span>
+                          <span className="about-history-desc">{row.desc}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -241,7 +216,7 @@ export default function TNQ21AboutPage() {
                     data-wow-offset={0}
                   >
                     <Image
-                      src={`${ABOUT_IMG}/organization/조직도.jpg`}
+                      src={`${ABOUT_IMG}/organization/organ_map.png`}
                       alt="조직도"
                       width={1200}
                       height={676}
@@ -283,16 +258,42 @@ export default function TNQ21AboutPage() {
               </div>
             </section>
 
-            {/* 6. 오시는 길 */}
+            {/* 6. 주요 고객 (main-portfolio-boxed-4col-dark 스타일) */}
             <section
-              id="location"
+              id="customers"
               className="scrollSpysection page-section bg-dark-2 light-content"
             >
               <div className="container">
-                <SectionTitle caption="Location" title="오시는 길" />
+                <SectionTitle caption="Main Customers" title="주요 고객" />
+                <ul className="works-grid work-grid-4 work-grid-gut-lg hover-white work-grid-hover-alt clearfix">
+                  {HISTORY_IMGS.map((imgName, index) => (
+                    <li key={index} className="work-item">
+                      <a className="work-ext-link" href="#customers" aria-label={`주요 고객 ${index + 1}`}>
+                        <div className="work-img">
+                          <div className="work-img-bg" />
+                          <Image
+                            src={`${ABOUT_IMG}/history/${imgName}`}
+                            alt={`주요 고객 ${index + 1}`}
+                            width={280}
+                            height={180}
+                            className="w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="pt-0">
-                <div className="google-map light-content">
+            </section>
+
+            {/* 7. 오시는 길 */}
+            <section
+              id="location"
+              className="scrollSpysection page-section bg-dark-1 light-content"
+            >
+              <div className="container">
+                <SectionTitle caption="Location" title="오시는 길" />
+                <div className="google-map light-content pt-0">
                   <Map />
                 </div>
               </div>

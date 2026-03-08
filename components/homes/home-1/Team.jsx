@@ -42,11 +42,8 @@ export default function Team() {
           <div>
             <Swiper
               spaceBetween={0}
-              slidesPerView={2}
+              slidesPerView={1}
               breakpoints={{
-                500: {
-                  slidesPerView: 2, // When window width is <= 480px
-                },
                 0: {
                   slidesPerView: 1,
                 },
@@ -69,35 +66,20 @@ export default function Team() {
                 <SwiperSlide className="owl-item" key={index}>
                   <div className="team-carousel-item">
                     <div className="team-item">
-                      <div className="team-item-image">
+                      <div
+                        className="team-item-image team-factory-image-3-2"
+                        style={{ aspectRatio: "3/2" }}
+                      >
                         <Image
-                          width={600}
-                          height={800}
                           src={member.image}
-                          className="wow scaleOutIn"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-fit-cover wow scaleOutIn"
                           alt="Image Description"
                         />
-                        <div className="team-item-detail">
-                          <div className="team-social-links">
-                            {member.socials.map((social, socialIndex) => (
-                              <a
-                                href={social.url}
-                                target="_blank"
-                                rel="noopener nofollow"
-                                key={socialIndex}
-                              >
-                                <div className="visually-hidden">
-                                  {social.platform}
-                                </div>
-                                <i className={social.icon} />
-                              </a>
-                            ))}
-                          </div>
-                        </div>
                       </div>
                       <div className="team-item-descr">
                         <div className="team-item-name">{member.name}</div>
-                        <div className="team-item-role">{member.role}</div>
                       </div>
                     </div>
                   </div>

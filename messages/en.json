@@ -21,6 +21,7 @@
     "history": "History",
     "organization": "Organization",
     "patents": "Patents",
+    "mainCustomers": "Main Customers",
     "location": "Location",
     "hotStampingDie": "HOT STAMPING DIE",
     "coldStampingDie": "COLD STAMPING DIE",
@@ -33,7 +34,8 @@
     "productInquiry": "Product Inquiry",
     "contactUs": "CONTACT US",
     "factory": "Factory",
-    "hotStamping": "Hot Stamping"
+    "hotStamping": "Hot Stamping",
+    "gallery": "Gallery"
   },
   "hero": {
     "title": "Global Standard Hot Stamping & Press Die Solution - TNQ Corporation",

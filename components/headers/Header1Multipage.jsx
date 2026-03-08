@@ -15,9 +15,9 @@ export default function Header1Multipage({ links }) {
       <div className="nav-logo-wrap local-scroll">
         <Link href={`/`} className="logo">
           <Image
-            src="/assets/images/logo_tp.png"
+            src="/assets/images/tnq_logo_transparent.png"
             alt="TNQ 로고"
-            width={105}
+            width={180}
             height={34}
           />
         </Link>

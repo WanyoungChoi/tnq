@@ -1,6 +1,6 @@
 export const teamMembers = [
   {
-    name: "Thomas Johnson",
+    name: "기계이름1",
     role: "Developer, co-founder",
     image: "/assets/images/tnq21/main/factory-1.jpg",
     socials: [
@@ -10,7 +10,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Emma Johnson",
+    name: "기계이름2",
     role: "UI/UX Designer, co-founder",
     image: "/assets/images/tnq21/main/factory-2.jpg",
     socials: [
@@ -20,7 +20,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
+    name: "공장외부",
     role: "Web developer",
     image: "/assets/images/tnq21/main/factory-3.jpg",
     socials: [
@@ -30,7 +30,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
+    name: "공장내부",
     role: "Art director, designer",
     image: "/assets/images/tnq21/main/factory-4.jpg",
     socials: [
@@ -39,6 +39,16 @@ export const teamMembers = [
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
+  {
+    name: "스캔장비",
+    role: "Art director, designer",
+    image: "/assets/images/tnq21/main/factory-5.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },  
 ];
 export const teamMembers2 = [
   {

@@ -41,7 +41,7 @@ export default function CustomerCenterProductInquiryPage() {
                           </h2>
                           <h1 className="hs-title-1 mb-0">
                             <span className="wow charsAnimIn" data-splitting="chars">
-                              Send your inquiry and we&apos;ll get back to you.
+                              we&apos;ll get back to you.
                             </span>
                           </h1>
                         </div>
