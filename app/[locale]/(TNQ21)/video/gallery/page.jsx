@@ -21,9 +21,6 @@ function SectionTitle({ caption, title }) {
             {caption}
           </h2>
         )}
-        <h3 className="section-title mb-0 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s">
-          <AnimatedText text={title} />
-        </h3>
       </div>
     </div>
   );

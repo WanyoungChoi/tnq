@@ -76,9 +76,6 @@ export default function VideoGalleryGrid() {
                           sizes="(max-width: 768px) 100vw, 25vw"
                         />
                       </div>
-                      <div className="work-intro text-start">
-                        <h3 className="work-title">갤러리 {index + 1}</h3>
-                      </div>
                     </>
                   )}
                 </Item>
