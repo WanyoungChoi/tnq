@@ -1,7 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 import Header1Multipage from "@/components/headers/Header1Multipage";
-import Contact from "@/components/homes/home-5/Contact";
+import ProductInquiryForm from "@/components/forms/ProductInquiryForm";
 import { menuTNQ21 } from "@/data/menuTNQ21";
 
 const ABOUT_IMG = "/assets/images/tnq21/about";
@@ -52,7 +52,13 @@ export default function CustomerCenterProductInquiryPage() {
               </ParallaxContainer>
             </section>
             <section className="page-section bg-dark-1 light-content pt-0" id="contact">
-              <Contact showContactItems={false} />
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-10 offset-md-1">
+                    <ProductInquiryForm />
+                  </div>
+                </div>
+              </div>
             </section>
           </main>
           <Footer1 dark />
