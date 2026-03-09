@@ -14,7 +14,6 @@ export const galleryVideoFilters = [
 export const galleryVideoItems = [
   // 2026_factory
   { src: `${GALLERY_BASE}/2026_factory/KakaoTalk_20260223_141657506.jpg`, className: "work-item mix cat-2026-factory" },
-  { src: `${GALLERY_BASE}/2026_factory/KakaoTalk_20260223_141657506_03.jpg`, className: "work-item mix cat-2026-factory" },
   { src: `${GALLERY_BASE}/2026_factory/KakaoTalk_20260223_141657506_04.jpg`, className: "work-item mix cat-2026-factory" },
   { src: `${GALLERY_BASE}/2026_factory/KakaoTalk_20260223_141657506_08.jpg`, className: "work-item mix cat-2026-factory" },
   { src: `${GALLERY_BASE}/2026_factory/KakaoTalk_20260223_141657506_10.jpg`, className: "work-item mix cat-2026-factory" },

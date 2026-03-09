@@ -265,6 +265,52 @@ const HSTDIE_BLOCKS = [
   },
 ];
 
+// ——— HOT STAMPING TRIM'G DIE - 생산업무 (HSTDIE2) — image001↔1번, image002↔2번, image003↔3번, image004↔4번
+const HSTDIE2_BLOCKS = [
+  {
+    imageSrc: `${B}/HSTDIE2/image001.jpg`,
+    title: "1. 패턴,주물 제작",
+    items: ["패턴 제작", "패턴 검사", "주물 제작", "주물 검사"],
+  },
+  {
+    imageSrc: `${B}/HSTDIE2/image002.jpg`,
+    title: "2. 스틸, 주물 가공",
+    items: [
+      "주물,스틸,PAD 면삭",
+      "형상스틸 면삭 가공",
+      "형상 단품 형상가공 ( 황,중삭 )",
+      "스틸,주강,주물 조립",
+      "형상면 정삭 가공",
+      "인부 인서트 WIRE 가공",
+      "열처리 및 코팅 ( 최종 품질확인 후 )",
+    ],
+  },
+  {
+    imageSrc: `${B}/HSTDIE2/image003.jpg`,
+    title: "3. 금형 부품 조립",
+    items: [
+      "가이드 부품 조립",
+      "압력용 부품 조립",
+      "게이지 조립",
+      "인부,피어스,캠 부품 조립",
+      "기타 액세서리 조립",
+      "안전관련 부품 조립",
+    ],
+  },
+  {
+    imageSrc: `${B}/HSTDIE2/image004.jpg`,
+    title: "4. T/O 및 품질 육성",
+    items: [
+      "하사점 확인 T/O",
+      "형합 확인 및 육성",
+      "재료t 확인용 납 체크",
+      "성형성 확인용 T/O",
+      "전공정T/O 후 품질 확인",
+      "품질결과에 따른 수정방안 수립",
+    ],
+  },
+];
+
 // ——— Section 6: COLD STAMPING DIE - 생산업무 (CSDIE2) — image001↔1번, ...
 const CSDIE2_BLOCKS = [
   {
@@ -456,6 +502,28 @@ export default function TNQ21BusinessPage() {
               </div>
             </section>
 
+            {/* HOT STAMPING TRIM'G DIE - 생산업무 (HSTDIE2) */}
+            <section
+              id="hot-stamping-trim-die-production"
+              className="scrollSpysection page-section bg-dark-2 light-content"
+            >
+              <div className="container">
+                <SectionTitle
+                  caption="HS TRIM'G DIE"
+                  title="HOT STAMPING TRIM'G DIE - 생산업무"
+                />
+                {HSTDIE2_BLOCKS.map((block, i) => (
+                  <BusinessContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={`HOT STAMPING TRIM'G DIE 생산업무 ${i + 1}`}
+                    title={block.title}
+                  >
+                    <ItemList items={block.items} />
+                  </BusinessContentBlock>
+                ))}
+              </div>
+            </section>
 
           </main>
           <Footer1 dark />
