@@ -1,17 +1,21 @@
 import Footer1 from "@/components/footers/Footer1";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 import Header1Multipage from "@/components/headers/Header1Multipage";
+import AnimatedText from "@/components/common/AnimatedText";
 import ProductInquiryForm from "@/components/forms/ProductInquiryForm";
 import { menuTNQ21 } from "@/data/menuTNQ21";
+import { getTranslations } from "next-intl/server";
 
 const ABOUT_IMG = "/assets/images/tnq21/about";
 
-export const metadata = {
-  title: "TNQ21 || 제품문의",
-  description: "TNQ21 제품문의",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return { title: t("productInquiryTitle"), description: t("productInquiryDesc") };
+}
 
-export default function CustomerCenterProductInquiryPage() {
+export default async function CustomerCenterProductInquiryPage() {
+  const t = await getTranslations("customerCenter");
+
   return (
     <>
       <div className="theme-main dark-mode">
@@ -23,9 +27,7 @@ export default function CustomerCenterProductInquiryPage() {
             <section className="page-section pt-0 pb-0" id="home">
               <ParallaxContainer
                 className="page-section pb-100 pb-sm-60 bg-dark-1 bg-dark-alpha-80 light-content parallax-5"
-                style={{
-                  backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)`,
-                }}
+                style={{ backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)` }}
               >
                 <>
                   <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark"></div>
@@ -37,11 +39,11 @@ export default function CustomerCenterProductInquiryPage() {
                             className="section-caption-border mb-30 mb-xs-20 wow fadeInUp"
                             data-wow-duration="1.2s"
                           >
-                            Product Inquiry
+                            {t("productInquiryCaption")}
                           </h2>
                           <h1 className="hs-title-1 mb-0">
                             <span className="wow charsAnimIn" data-splitting="chars">
-                              we&apos;ll get back to you.
+                              <AnimatedText text={t("productInquirySubtitle")} />
                             </span>
                           </h1>
                         </div>

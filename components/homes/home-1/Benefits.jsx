@@ -1,14 +1,19 @@
+"use client";
+
 import { featureItems } from "@/data/features";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Benefits() {
+  const t = useTranslations("main");
+
   return (
     <div className="container position-relative">
       {/* Grid */}
       <div className="row">
         {/* Text */}
         <div className="col-md-12 col-lg-3 mb-md-50">
-          <h3 className="section-title-small mb-40">Why choose TNQ?</h3>
+          <h3 className="section-title-small mb-40">{t("benefitsSectionTitle")}</h3>
           <div className="section-line" />
         </div>
         {/* End Text */}
@@ -31,8 +36,8 @@ export default function Benefits() {
                   <path d={item.path} />
                 </svg>
               </div>
-              <h4 className="alt-features-title">{item.title}</h4>
-              <div className="alt-features-descr">{item.description}</div>
+              <h4 className="alt-features-title">{t(`feature${index + 1}Title`)}</h4>
+              <div className="alt-features-descr">{t(`feature${index + 1}Desc`)}</div>
             </div>
           </div>
         ))}

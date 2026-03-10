@@ -2,10 +2,12 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import Script from "next/script";
+import { useTranslations } from "next-intl";
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
 
 export default function ProductInquiryForm() {
+  const t = useTranslations("customerCenter");
   const formRef = useRef(null);
   const openedAtRef = useRef(null);
   const [status, setStatus] = useState(null);
@@ -36,13 +38,13 @@ export default function ProductInquiryForm() {
     const message = form.message?.value?.trim();
 
     if (!name || !email || !message) {
-      setStatus({ type: "error", text: "필수 항목을 입력해 주세요." });
+      setStatus({ type: "error", text: t("errorRequired") });
       return;
     }
 
     const recaptchaToken = getRecaptchaResponse();
     if (RECAPTCHA_SITE_KEY && !recaptchaToken) {
-      setStatus({ type: "error", text: "보안 확인을 완료해 주세요." });
+      setStatus({ type: "error", text: t("errorRecaptcha") });
       return;
     }
 
@@ -66,21 +68,21 @@ export default function ProductInquiryForm() {
       const data = await res.json();
 
       if (!res.ok) {
-        setStatus({ type: "error", text: data.error || "발송에 실패했습니다." });
+        setStatus({ type: "error", text: data.error || t("errorSendFailed") });
       if (RECAPTCHA_SITE_KEY && typeof window.grecaptcha?.reset === "function") {
         window.grecaptcha.reset();
       }
       return;
     }
 
-    setStatus({ type: "success", text: "문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다." });
+    setStatus({ type: "success", text: t("successSent") });
     form.reset();
     openedAtRef.current = Date.now();
     if (RECAPTCHA_SITE_KEY && typeof window.grecaptcha?.reset === "function") {
       window.grecaptcha.reset();
     }
   } catch {
-    setStatus({ type: "error", text: "네트워크 오류가 발생했습니다. 다시 시도해 주세요." });
+    setStatus({ type: "error", text: t("errorNetwork") });
     if (RECAPTCHA_SITE_KEY && typeof window.grecaptcha?.reset === "function") {
       window.grecaptcha.reset();
     }
@@ -115,7 +117,7 @@ export default function ProductInquiryForm() {
           }}
           aria-hidden="true"
         >
-          <label htmlFor="company_website">회사 웹사이트 (비워두세요)</label>
+          <label htmlFor="company_website">{t("formHoneypotLabel")}</label>
           <input
             type="text"
             id="company_website"
@@ -128,13 +130,13 @@ export default function ProductInquiryForm() {
         <div className="row">
           <div className="col-md-6">
             <div className="form-group">
-              <label htmlFor="name">이름</label>
+              <label htmlFor="name">{t("formNameLabel")}</label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 className="input-lg round form-control"
-                placeholder="본명이 아닌 가명으로 입력해 주세요"
+                placeholder={t("formNamePlaceholder")}
                 pattern=".{3,100}"
                 required
                 aria-required="true"
@@ -144,13 +146,13 @@ export default function ProductInquiryForm() {
           </div>
           <div className="col-md-6">
             <div className="form-group">
-              <label htmlFor="email">이메일</label>
+              <label htmlFor="email">{t("formEmailLabel")}</label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 className="input-lg round form-control"
-                placeholder="이메일을 입력하세요"
+                placeholder={t("formEmailPlaceholder")}
                 pattern=".{5,100}"
                 required
                 aria-required="true"
@@ -161,13 +163,13 @@ export default function ProductInquiryForm() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">문의내용</label>
+          <label htmlFor="message">{t("formMessageLabel")}</label>
           <textarea
             name="message"
             id="message"
             className="input-lg round form-control"
             style={{ height: 130 }}
-            placeholder="문의 내용을 입력하세요"
+            placeholder={t("formMessagePlaceholder")}
             required
             aria-required="true"
             disabled={loading}
@@ -184,7 +186,7 @@ export default function ProductInquiryForm() {
           <div className="col-sm-6">
             <div className="form-tip pt-20 pt-sm-0">
               <i className="icon-info size-16" />
-              개인정보를 수집하지 않습니다. 문의 내용에 개인정보를 입력하지 마십시오.
+              {t("formPrivacyTip")}
             </div>
           </div>
           <div className="col-sm-6">
@@ -197,11 +199,11 @@ export default function ProductInquiryForm() {
                 data-link-animate="y"
               >
                 <span className="link-strong link-strong-unhovered">
-                  {loading ? "발송 중…" : "문의 발송하기"}
+                  {loading ? t("formSubmitSending") : t("formSubmitButton")}
                   <i className="mi-arrow-right size-18 align-middle" aria-hidden="true" />
                 </span>
                 <span className="link-strong link-strong-hovered" aria-hidden="true">
-                  {loading ? "발송 중…" : "문의 발송하기"}
+                  {loading ? t("formSubmitSending") : t("formSubmitButton")}
                   <i className="mi-arrow-right size-18 align-middle" aria-hidden="true" />
                 </span>
               </button>

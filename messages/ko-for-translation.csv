@@ -1,0 +1,244 @@
+﻿key,ko,en
+nav.home,홈,Home
+nav.about,회사소개,About
+nav.services,서비스,Services
+nav.portfolio,포트폴리오,Portfolio
+nav.blog,블로그,Blog
+nav.contact,연락처,Contact
+common.readMore,더보기,Read More
+common.contactUs,문의하기,Contact Us
+common.logoAlt,TNQ 로고,TNQ Logo
+common.menuAria,메뉴,Menu
+menu.about,회사소개,About Us
+menu.business,사업현황,Business
+menu.equipment,설비현황,Equipment
+menu.customerCenter,고객센터,Customer
+menu.video,홍보영상,Video
+menu.ceoMessage,CEO인사말,CEO Message
+menu.history,회사연혁,History
+menu.organization,조직현황,Organization
+menu.patents,특허현황,Patents
+menu.mainCustomers,주요고객,Main Customers
+menu.location,오시는길,Location
+menu.machining,가공설비,Machining
+menu.trialRun,시운전설비,Trial Run
+menu.heatTreatmentCoating,열처리&코팅 설비,Heat Treatment & Coating
+menu.measurementInspection,측정&검사설비,Measurement & Inspection
+menu.notice,공지사항,Notice
+menu.productInquiry,제품문의,Product Inquiry
+menu.factory,공장,Factory
+menu.hotStamping,핫스템핑,Hot Stamping
+menu.gallery,갤러리,Gallery
+hero.subtitle1,끊임없는 기술 개발과 품질 혁신으로,"With continuous technology development and quality innovation,"
+hero.subtitle2,고객 만족을 실현하는 (주)TNQ입니다.,we deliver customer satisfaction. TNQ Corporation
+hero.subtitleM1,끊임없는 기술 개발과,With continuous technology development
+hero.subtitleM2,품질 혁신으로,"and quality innovation,"
+hero.subtitleM3,고객 만족을 실현하는,we deliver customer satisfaction.
+hero.subtitleM4,(주)TNQ입니다.,TNQ Corporation
+hero.statusLine1,성장하는 1류 기업,"A growing first-class company,"
+hero.statusLine2,주식회사 TNQ,TNQ Corporation
+main.visionMissionTitle,우리의 비전과 미션,Our Vision & Mission
+main.factoryTitle,기술이 살아 숨 쉬는 공간,Where Technology Comes to Life
+main.futureStrategyTitle,미래를 향한 도전,Challenging the Future
+main.visionHeading,우리의 비전,Our Vision
+main.visionText,"우리는 축적된 금형 기술과 현장 중심의 노하우를 바탕으로 고품질·고정밀 금형을 안정적으로 공급합니다. 빠른 대응력과 철저한 품질관리로 고객의 생산성을 높이고, 지속 가능한 제조 파트너로 함께 성장합니다.","We stably supply high-quality, high-precision molds based on accumulated mold technology and field-oriented know-how. We enhance our customers' productivity through quick response and thorough quality control, growing together as a sustainable manufacturing partner."
+main.missionHeading,우리의 미션,Our Mission
+main.missionText,우리는 사람의 정성과 기술이 만나 최고의 금형이 만들어진다고 믿습니다. 서로를 존중하는 현장에서 안전과 신뢰를 가장 소중한 가치로 지켜갑니다. 고객의 고민을 함께 나누며 진심으로 소통하는 파트너가 되겠습니다. 함께 일하는 모든 사람의 성장이 곧 우리의 성장임을 약속합니다.,We believe that the best molds are made when human dedication meets technology. We uphold safety and trust as our most valued principles in a workplace that respects one another. We are committed to being a partner that shares our customers' concerns and communicates with sincerity. We promise that the growth of everyone we work with is our growth.
+main.aboutVideoAria,CEO 및 현장,CEO and workplace
+main.teamQuote,"최첨단 가공 설비와
+체계적인 품질관리 시스템.
+작은 오차도 허용하지 않는 정밀 공정.
+우리의 공장은
+단순한 생산 공간이 아니라
+신뢰가 만들어지는 현장입니다.","State-of-the-art machining equipment and
+systematic quality control.
+A precision process that allows no margin for error.
+Our factory is
+not just a production space
+but a place where trust is built."
+main.teamAddress,충주산단 1로 185 용탄동 공장,"185 Chungju Industrial Complex 1-ro, Yongtan-dong"
+main.serviceIntro,변화하는 산업 환경 속에서 우리는 멈추지 않습니다.,We never stand still in a changing industry.
+main.serviceStrategy1,데이터베이스 확립으로 기술력 축적,Building technology through database establishment
+main.serviceStrategy2,표준화 및 문서화로 실무 적극 활용,Active practical use through standardization and documentation
+main.serviceStrategy3,무인가동 및 자동화로 스마트공정 도입,Smart processes through unmanned operation and automation
+main.serviceStrategy4,기술교육을 통한 업계 경쟁력 강화,Strengthening industry competitiveness through technical training
+main.serviceStrategy5,지속적인 R&D투자로 신규사업 유치,Attracting new business through continuous R&D investment
+main.serviceStrategy6,글로벌 시장 대응을 위한 전략 수립,Strategy development for the global market
+main.serviceVideoAria,CEO 오피스,CEO office
+main.feature1Title,기술경쟁력,Technical Competitiveness
+main.feature1Desc,오랜 경험과 숙련된 기술력을 바탕으로 고객이 원하는 금형을 제작 공급합니다.,We manufacture and supply molds that meet our customers' needs based on long experience and skilled expertise.
+main.feature2Title,품질 관리,Quality Management
+main.feature2Desc,표준화된 품질프로세스를 통해 고객이 요구하는 품질의 금형을 제작 공급합니다.,We manufacture and supply molds that meet our customers' quality requirements through standardized quality processes.
+main.feature3Title,고객 중심,Customer Focus
+main.feature3Desc,내보내면 끝이 아닌 우리가 만든 금형은 우리가 책임진다는 마음으로 고객만족에 최선을 다 하겠습니다.,"We are committed to customer satisfaction with the mindset that we take responsibility for every mold we make, not just deliver and forget."
+footer.address,충청북도 충주시 충주산단1로 185,"185 Chungju Industrial Complex 1-ro, Chungju-si, Chungcheongbuk-do"
+footer.mapIframeTitle,오시는 길 지도,Location map
+footer.mapViewOnGoogle,구글 지도에서 보기,View on Google Maps
+footer.scrollToTop,맨 위로,Scroll to top
+metadata.aboutTitle,TNQ21 || 회사소개,TNQ21 || About Us
+metadata.aboutDesc,TNQ21 회사소개,TNQ21 About Us
+metadata.businessTitle,TNQ21 || 사업현황,TNQ21 || Business
+metadata.businessDesc,TNQ21 사업현황,TNQ21 Business
+metadata.equipmentTitle,TNQ21 || 설비현황,TNQ21 || Equipment
+metadata.equipmentDesc,TNQ21 설비현황,TNQ21 Equipment
+metadata.videoTitle,TNQ21 || 홍보영상,TNQ21 || Video
+metadata.videoDesc,TNQ21 홍보영상,TNQ21 Promotional Video
+metadata.customerCenterTitle,TNQ21 || 고객센터,TNQ21 || Customer Center
+metadata.customerCenterDesc,TNQ21 고객센터,TNQ21 Customer Center
+metadata.noticeTitle,TNQ21 || 공지사항,TNQ21 || Notice
+metadata.noticeDesc,TNQ21 공지사항,TNQ21 Notice
+metadata.productInquiryTitle,TNQ21 || 제품문의,TNQ21 || Product Inquiry
+metadata.productInquiryDesc,TNQ21 제품문의,TNQ21 Product Inquiry
+metadata.galleryTitle,TNQ21 || 갤러리,TNQ21 || Gallery
+metadata.galleryDesc,TNQ21 갤러리,TNQ21 Gallery
+about.bannerTitle,"사람과 기술, 그리고 신뢰로 성장합니다.","Growing with people, technology, and trust."
+about.sectionCeoTitle,CEO 인사말,CEO Message
+about.altCeoVideo,CEO 인사말,CEO message
+about.ceoParagraphs.0,안녕하십니까. TNQ 대표이사 김정호입니다.,"Hello. I am Kim Jung-ho, CEO of TNQ."
+about.ceoParagraphs.1,"TNQ는 2012년 TNP 금형사업부로 출발하여, 2022년 TNQ로 인적분할을 통해 새로운 이름으로 독립한 자동차 차체 열간 및 냉간 금형 제작 전문기업입니다. 그동안 축적해 온 경험과 기술력을 바탕으로, 고객사와 함께 성장하며 오늘의 TNQ로 발전해 왔습니다.",TNQ started in 2012 as the mold division of TNP and became independent under the name TNQ in 2022 through a spin-off. We are a specialist in automotive body hot and cold stamping dies. We have grown with our customers based on our accumulated experience and technological capabilities.
+about.ceoParagraphs.2,"창사 이래 TNQ는 지속적인 투자와 기술력 확보를 통해 차별화된 경쟁력을 갖추고자 노력해 왔으며, 정직한 품질과 책임 있는 자세로 고객의 신뢰에 보답하고 있습니다. 빠르게 변화하는 산업 환경 속에서도 TNQ가 꾸준히 성장할 수 있었던 것은 고객 여러분의 아낌없는 성원과 믿음 덕분이라고 생각합니다.","Since our founding, we have strived to build differentiated competitiveness through continuous investment and technology, and we have responded to our customers' trust with integrity and responsibility. We believe that TNQ's steady growth amid a rapidly changing industry is thanks to your support and trust."
+about.ceoParagraphs.3,현재 자동차 산업은 전기차와 자율주행 등 새로운 패러다임 속에서 큰 변화를 맞이하고 있습니다. TNQ는 이러한 변화에 발맞추어 차체 경량화를 위한 열간금형 개발과 고장력 강판 대응 금형 제작 기술을 확보하며 미래 모빌리티 시대를 준비하고 있습니다.,The automotive industry is undergoing major changes with new paradigms such as electric vehicles and autonomous driving. TNQ is preparing for the future of mobility by developing hot stamping dies for body lightweighting and cold stamping dies for high-strength steel.
+about.ceoParagraphs.4,"앞으로도 TNQ는 단순한 금형 제조사를 넘어 고객의 가치를 함께 만들어가는 신뢰할 수 있는 기술 파트너로서, 최고의 품질과 납기 경쟁력을 통해 고객 만족을 실현해 나가겠습니다.","Going forward, TNQ will go beyond being a die manufacturer to become a trusted technology partner that creates value with customers, and we will achieve customer satisfaction through the highest quality and delivery competitiveness."
+about.ceoParagraphs.5,"TNQ는 끊임없는 기술 개발과 혁신을 바탕으로 자동차 차체 금형 분야에서 신뢰받는 기업으로 성장해 나갈 것이며, 항상 고객과 함께 미래를 만들어가는 기업이 되겠습니다.","We will grow into a trusted company in automotive body dies through constant R&D and innovation, and we will continue to build the future together with our customers."
+about.ceoParagraphs.6,감사합니다.,Thank you.
+about.ceoParagraphs.7,㈜ TNQ 대표이사  김정호,"Kim Jung-ho, CEO of TNQ Corporation"
+about.sectionHistoryTitle,회사 연혁,Company History
+about.historyRows.0.desc,TNP 금형사업부로 프레스금형사업 개시,Started press die business as TNP mold division
+about.historyRows.1.desc,핫스탬핑부품 냉간트림금형 개발 및 양산화 성공,Development and mass production of cold trim die for hot stamping parts
+about.historyRows.2.desc,"핫스탬핑부품 냉간트림금형 특허출원 (국내, 미국, 중국, 독일)","Patent applications for cold trim die (Korea, USA, China, Germany)"
+about.historyRows.3.desc,산업혁신3.0 우수기업 표창 장려상 수상,Excellence Award in Industry Innovation 3.0
+about.historyRows.4.desc,TNP – TNQ 법인분할,Spin-off of TNP into TNQ
+about.historyRows.5.desc,현대/기아자동차 1차협력사 등록 및 거래개시,"Registered as Hyundai/Kia 1st-tier supplier, started business"
+about.historyRows.6.desc,매출 100억 돌파,Revenue exceeded 10 billion KRW
+about.historyRows.7.desc,김정호 대표이사 취임,CEO Kim Jung-ho appointed
+about.sectionOrgTitle,조직 현황,Organization
+about.altOrgChart,조직도,Organization chart
+about.sectionPatentsTitle,특허 현황,Patents
+about.patentLabels.0,한국,Korea
+about.patentLabels.1,한국,Korea
+about.patentLabels.2,미국,USA
+about.patentLabels.3,독일,Germany
+about.patentLabels.4,중국,China
+about.sectionCustomersTitle,주요 고객,Main Customers
+about.altMainCustomer,주요 고객,Main customer
+about.sectionLocationTitle,오시는 길,Location
+video.bannerTitle,영상으로 보는 우리의 기술과 현장,Our technology and workplace in video
+video.factoryVideo1Title,TNQ 공장 전경_1,TNQ Factory Overview 1
+video.factoryVideo2Title,TNQ 공장 전경_2,TNQ Factory Overview 2
+video.hotStampingVideo1Title,TNQ 핫스템핑 T/O CTR PLR,TNQ Hot Stamping T/O CTR PLR
+video.hotStampingVideo2Title,TNQ 핫스탬핑 T/O 동영상,TNQ Hot Stamping T/O Video
+video.hotStampingVideo3Title,TNQ 핫스탬핑 T/O 영상,TNQ Hot Stamping T/O
+video.hotStampingVideo4Title,TNQ 핫스템핑 T/O,TNQ Hot Stamping T/O
+video.gallerySectionTitle,갤러리,Gallery
+video.galleryFilterAll,전체,All
+video.galleryFilterFactory,공장,Factory
+video.galleryFilterSimu,시무식,Opening Ceremony
+video.galleryImageAlt,갤러리 {index},Gallery {index}
+customerCenter.productInquiryCaption,제품문의,Product Inquiry
+customerCenter.productInquirySubtitle,문의해 주시면 빠르게 답변 드리겠습니다.,We'll get back to you.
+customerCenter.formHoneypotLabel,회사 웹사이트 (비워두세요),Company website (leave blank)
+customerCenter.formNameLabel,이름,Name
+customerCenter.formNamePlaceholder,본명이 아닌 가명으로 입력해 주세요,"Enter a nickname, not your real name"
+customerCenter.formEmailLabel,이메일,Email
+customerCenter.formEmailPlaceholder,이메일을 입력하세요,Enter your email
+customerCenter.formMessageLabel,문의내용,Inquiry
+customerCenter.formMessagePlaceholder,문의 내용을 입력하세요,Enter your inquiry
+customerCenter.formPrivacyTip,개인정보를 수집하지 않습니다. 문의 내용에 개인정보를 입력하지 마십시오.,We do not collect personal information. Please do not include personal information in your message.
+customerCenter.formSubmitSending,발송 중…,Sending…
+customerCenter.formSubmitButton,문의 발송하기,Send inquiry
+customerCenter.errorRequired,필수 항목을 입력해 주세요.,Please fill in all required fields.
+customerCenter.errorRecaptcha,보안 확인을 완료해 주세요.,Please complete the security verification.
+customerCenter.errorSendFailed,발송에 실패했습니다.,Failed to send.
+customerCenter.successSent,문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.,Your inquiry has been received. We will get back to you soon.
+customerCenter.errorNetwork,네트워크 오류가 발생했습니다. 다시 시도해 주세요.,A network error occurred. Please try again.
+customerCenter.faq.0.question,TNQ 홈페이지가 새롭게 오픈하였습니다.,TNQ website has been renewed.
+customerCenter.faq.0.answer,"안녕하세요, TNQ입니다. TNQ의 공식 홈페이지가 새롭게 오픈되었습니다.
+앞으로 회사 소개, 설비 현황, 사업 정보 등 다양한 내용을 통해 TNQ의 기술력과 소식을 보다 편리하게 전달해 드리겠습니다.
+많은 관심과 방문 부탁드립니다.
+감사합니다.","Hello, this is TNQ. Our official website has been renewed.
+We will provide TNQ's technology and news more conveniently through company introduction, equipment, business information and more.
+We look forward to your continued interest and visits.
+Thank you."
+customerCenter.faq.1.question,정밀 가공 설비 확충 안내,Precision machining equipment expansion
+customerCenter.faq.1.answer,"TNQ는 보다 높은 품질의 금형 제작을 위해 정밀 가공 설비를 추가로 도입하였습니다.
+이번 설비 확충을 통해 생산 효율과 가공 정밀도를 더욱 향상시켜 고객 여러분께 안정적인 품질의 제품을 제공할 수 있도록 노력하겠습니다.
+앞으로도 지속적인 기술 투자와 설비 개선을 통해 더 나은 서비스를 제공하겠습니다.","TNQ has introduced additional precision machining equipment for higher quality die manufacturing.
+Through this expansion, we will improve production efficiency and machining precision to provide you with stable quality products.
+We will continue to provide better services through ongoing investment and equipment improvement."
+customerCenter.faq.2.question,품질 관리 시스템 강화 안내,Quality management system enhancement
+customerCenter.faq.2.answer,"TNQ는 제품 품질 향상을 위해 측정 및 검사 공정을 강화하였습니다.
+정밀 측정 장비와 체계적인 품질 관리 시스템을 통해 제품의 신뢰성과 안정성을 더욱 높이고 있습니다.
+앞으로도 고객이 신뢰할 수 있는 품질을 제공하기 위해 지속적으로 노력하겠습니다.","TNQ has strengthened measurement and inspection processes to improve product quality.
+We are increasing product reliability and stability through precision measurement equipment and a systematic quality management system.
+We will continue to strive to provide quality you can trust."
+customerCenter.faq.3.question,제품 및 기술 문의 안내,Product and technical inquiries
+customerCenter.faq.3.answer,"TNQ에서는 금형 제작 및 가공과 관련된 제품 문의와 기술 상담을 언제든지 받고 있습니다.
+홈페이지 문의 페이지 또는 연락처를 통해 편하게 문의해 주시면 담당자가 신속하게 안내해 드리겠습니다.
+고객 여러분의 많은 문의와 관심 부탁드립니다.","TNQ accepts product and technical inquiries regarding die manufacturing and machining at any time.
+Please contact us through the inquiry page or contact information, and our staff will assist you promptly.
+We look forward to your inquiries and interest."
+business.bannerTitle,정밀 제조 기술로 고객 가치를 만들어갑니다.,Creating customer value through precision manufacturing technology.
+business.section1Title,HOT STAMPING DIE - 기술업무,HOT STAMPING DIE - Engineering
+business.section2Title,HOT STAMPING DIE - 생산업무,HOT STAMPING DIE - Production
+business.section3Title,COLD STAMPING DIE - 기술업무,COLD STAMPING DIE - Engineering
+business.section4Title,COLD STAMPING DIE - 생산업무,COLD STAMPING DIE - Production
+business.section5Title,HOT STAMPING TRIM'G DIE - 기술업무,HOT STAMPING TRIM'G DIE - Engineering
+business.section6Title,HOT STAMPING TRIM'G DIE - 생산업무,HOT STAMPING TRIM'G DIE - Production
+business.altHsdie1,HOT STAMPING DIE 기술업무,HOT STAMPING DIE Engineering
+business.altHsdie2,HOT STAMPING DIE 생산업무,HOT STAMPING DIE Production
+business.altCsdie1,COLD STAMPING DIE 기술업무,COLD STAMPING DIE Engineering
+business.altCsdie2,COLD STAMPING DIE 생산업무,COLD STAMPING DIE Production
+business.altHstdie,HOT STAMPING TRIM'G DIE 기술업무,HOT STAMPING TRIM'G DIE Engineering
+business.altHstdie2,HOT STAMPING TRIM'G DIE 생산업무,HOT STAMPING TRIM'G DIE Production
+business.hsdie1.0.title,1.성형 해석,1. Forming analysis
+business.hsdie1.1.title,2.공법결정,2. Process design
+business.hsdie1.2.title,3.다이 디자인,3. Die design
+business.hsdie1.3.title,4.유동해석,4. Flow analysis
+business.hsdie2.0.title,"1. 패턴,주물 제작",1. Pattern & casting
+business.hsdie2.1.title,"2. 스틸, 주물 가공",2. Steel & casting machining
+business.hsdie2.2.title,3. 금형 부품 조립,3. Die parts assembly
+business.hsdie2.3.title,4. T/O 및 품질 육성,4. T/O & quality tuning
+business.csdie1.0.title,1.성형 해석,1. Forming analysis
+business.csdie1.1.title,2.공법결정,2. Process design
+business.csdie1.2.title,3.레이아웃 설정,3. Layout design
+business.csdie1.3.title,4.공정 설계,4. Process design
+business.hstdie.0.title,1.공법결정,1. Process design
+business.hstdie.1.title,2.공정 설계,2. Process design
+business.hstdie2.0.title,"1. 패턴,주물 제작",1. Pattern & casting
+business.hstdie2.1.title,"2. 스틸, 주물 가공",2. Steel & casting machining
+business.hstdie2.2.title,3. 금형 부품 조립,3. Die parts assembly
+business.hstdie2.3.title,4. T/O 및 품질 육성,4. T/O & quality tuning
+business.csdie2.0.title,"1. 패턴,주물 제작",1. Pattern & casting
+business.csdie2.1.title,"2. 스틸, 주물 가공",2. Steel & casting machining
+business.csdie2.2.title,3. 금형 부품 조립,3. Die parts assembly
+business.csdie2.3.title,4. T/O 및 품질 육성,4. T/O & quality tuning
+equipment.bannerTitle,정밀도를 완성하는 기술과 설비,Technology and equipment that deliver precision
+equipment.section1Title,가공 설비 - 대형 설비 (5축 가공기),Machining - Large (5-axis)
+equipment.section2Title,가공 설비 - 대형 설비 (범용),Machining - Large (General)
+equipment.section3Title,가공 설비 - 소형 설비 (범용),Machining - Small (General)
+equipment.section4Title,시운전 설비 - HOT STAMP'G T/O,Trial Run - HOT STAMP'G T/O
+equipment.section5Title,시운전 설비 - 메카 프레스,Trial Run - Mechanized Press
+equipment.section6Title,시운전 설비 - 유압 프레스,Trial Run - Hydraulic Press
+equipment.section7Title,"열처리,코팅 설비 - 열처리 설비",Heat Treatment & Coating
+equipment.section8Title,측정 및 검사설비 - 측정 설비,Measurement & Inspection
+equipment.gagong3.0.title,1.양두 밀링,1. Double-head milling
+equipment.gagong3.1.title,2.범용밀링,2. General milling
+equipment.gagong3.2.title,3.레디얼머신,3. Radial drill
+equipment.gagong3.3.title,4.범용선반,4. General lathe
+equipment.gagong3.4.title,5.범용연마기,5. General grinder
+equipment.gagong3.5.title,6.소형MCT,6. Small MCT
+equipment.siunjun1.0.title,1.800톤 유압 프레스,1. 800 Ton hydraulic press
+equipment.siunjun1.1.title,"2.T/O용 가열로, 냉각기",2. T/O furnace & chiller
+equipment.siunjun2.0.title,1. 1200 Ton메카 프레스,1. 1200 Ton mechanized press
+equipment.siunjun2.1.title,2. 1200Ton 메카 프레스,2. 1200 Ton mechanized press
+equipment.siunjun3.0.title,1. 1000 Ton유압 프레스,1. 1000 Ton hydraulic press
+equipment.siunjun3.1.title,2. 800 Ton유압 프레스,2. 800 Ton hydraulic press
+equipment.yulchuri.0.title,1.진공열처리,1. Vacuum heat treatment
+equipment.yulchuri.1.title,2.진공로-5기,2. Vacuum furnace (5 units)
+equipment.yulchuri.2.title,3.템퍼링로,3. Tempering furnace
+equipment.yulchuri.3.title,4.이온질화로-2기,4. Ion nitriding furnace (2 units)
+equipment.chukjung.0.title,1.CMM 측정기,1. CMM
+equipment.chukjung.1.title,2.3차원 측정기,2. 3D measuring machine
+equipment.chukjung.2.title,3.3D 스캐너,3. 3D scanner
+equipment.chukjung.3.title,4.경도측정기,4. Hardness tester
+equipment.chukjung.4.title,5.검사실,5. Inspection room

@@ -9,14 +9,16 @@
   },
   "common": {
     "readMore": "Read More",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "logoAlt": "TNQ Logo",
+    "menuAria": "Menu"
   },
   "menu": {
     "about": "About Us",
     "business": "Business",
     "equipment": "Equipment",
-    "customerCenter": "Customer Center",
-    "video": "Promotional Video",
+    "customerCenter": "Customer",
+    "video": "Video",
     "ceoMessage": "CEO Message",
     "history": "History",
     "organization": "Organization",
@@ -47,5 +49,627 @@
     "subtitleM4": "TNQ Corporation",
     "statusLine1": "A growing first-class company,",
     "statusLine2": "TNQ Corporation"
+  },
+  "main": {
+    "visionMissionCaption": "Vision & Mission",
+    "visionMissionTitle": "Our Vision & Mission",
+    "factoryCaption": "Our Factory & Technology",
+    "factoryTitle": "Where Technology Comes to Life",
+    "futureStrategyCaption": "Future Strategy",
+    "futureStrategyTitle": "Challenging the Future",
+    "benefitsCaption": "Benefits",
+    "benefitsTitle": "Why choose us",
+    "benefitsSectionTitle": "Why choose TNQ?",
+    "visionHeading": "Our Vision",
+    "visionText": "We stably supply high-quality, high-precision molds based on accumulated mold technology and field-oriented know-how. We enhance our customers' productivity through quick response and thorough quality control, growing together as a sustainable manufacturing partner.",
+    "missionHeading": "Our Mission",
+    "missionText": "We believe that the best molds are made when human dedication meets technology. We uphold safety and trust as our most valued principles in a workplace that respects one another. We are committed to being a partner that shares our customers' concerns and communicates with sincerity. We promise that the growth of everyone we work with is our growth.",
+    "aboutVideoAria": "CEO and workplace",
+    "teamQuote": "State-of-the-art machining equipment and\nsystematic quality control.\nA precision process that allows no margin for error.\nOur factory is\nnot just a production space\nbut a place where trust is built.",
+    "teamAddress": "185 Chungju Industrial Complex 1-ro, Yongtan-dong",
+    "serviceIntro": "We never stand still in a changing industry.",
+    "serviceStrategy1": "Building technology through database establishment",
+    "serviceStrategy2": "Active practical use through standardization and documentation",
+    "serviceStrategy3": "Smart processes through unmanned operation and automation",
+    "serviceStrategy4": "Strengthening industry competitiveness through technical training",
+    "serviceStrategy5": "Attracting new business through continuous R&D investment",
+    "serviceStrategy6": "Strategy development for the global market",
+    "serviceVideoAria": "CEO office",
+    "feature1Title": "Technical Competitiveness",
+    "feature1Desc": "We manufacture and supply molds that meet our customers' needs based on long experience and skilled expertise.",
+    "feature2Title": "Quality Management",
+    "feature2Desc": "We manufacture and supply molds that meet our customers' quality requirements through standardized quality processes.",
+    "feature3Title": "Customer Focus",
+    "feature3Desc": "We are committed to customer satisfaction with the mindset that we take responsibility for every mold we make, not just deliver and forget."
+  },
+  "footer": {
+    "companyName": "TNQ Corporation",
+    "tagline": "Precision Drives Performance",
+    "phoneEmailTitle": "PHONE & EMAIL",
+    "locationTitle": "Location",
+    "address": "185 Chungju Industrial Complex 1-ro, Chungju-si, Chungcheongbuk-do",
+    "mapIframeTitle": "Location map",
+    "mapViewOnGoogle": "View on Google Maps",
+    "scrollToTop": "Scroll to top"
+  },
+  "metadata": {
+    "aboutTitle": "TNQ21 || About Us",
+    "aboutDesc": "TNQ21 About Us",
+    "businessTitle": "TNQ21 || Business",
+    "businessDesc": "TNQ21 Business",
+    "equipmentTitle": "TNQ21 || Equipment",
+    "equipmentDesc": "TNQ21 Equipment",
+    "videoTitle": "TNQ21 || Video",
+    "videoDesc": "TNQ21 Promotional Video",
+    "customerCenterTitle": "TNQ21 || Customer Center",
+    "customerCenterDesc": "TNQ21 Customer Center",
+    "noticeTitle": "TNQ21 || Notice",
+    "noticeDesc": "TNQ21 Notice",
+    "productInquiryTitle": "TNQ21 || Product Inquiry",
+    "productInquiryDesc": "TNQ21 Product Inquiry",
+    "galleryTitle": "TNQ21 || Gallery",
+    "galleryDesc": "TNQ21 Gallery"
+  },
+  "about": {
+    "bannerTitle": "Growing with people, technology, and trust.",
+    "sectionCeoCaption": "CEO GREETING",
+    "sectionCeoTitle": "CEO Message",
+    "altCeoVideo": "CEO message",
+    "ceoParagraphs": [
+      "Hello. I am Kim Jung-ho, CEO of TNQ.",
+      "TNQ started in 2012 as the mold division of TNP and became independent under the name TNQ in 2022 through a spin-off. We are a specialist in automotive body hot and cold stamping dies. We have grown with our customers based on our accumulated experience and technological capabilities.",
+      "Since our founding, we have strived to build differentiated competitiveness through continuous investment and technology, and we have responded to our customers' trust with integrity and responsibility. We believe that TNQ's steady growth amid a rapidly changing industry is thanks to your support and trust.",
+      "The automotive industry is undergoing major changes with new paradigms such as electric vehicles and autonomous driving. TNQ is preparing for the future of mobility by developing hot stamping dies for body lightweighting and cold stamping dies for high-strength steel.",
+      "Going forward, TNQ will go beyond being a die manufacturer to become a trusted technology partner that creates value with customers, and we will achieve customer satisfaction through the highest quality and delivery competitiveness.",
+      "We will grow into a trusted company in automotive body dies through constant R&D and innovation, and we will continue to build the future together with our customers.",
+      "Thank you.",
+      "Kim Jung-ho, CEO of TNQ Corporation",
+      ""
+    ],
+    "sectionHistoryCaption": "History",
+    "sectionHistoryTitle": "Company History",
+    "historyRows": [
+      {
+        "year": "2012",
+        "desc": "Started press die business as TNP mold division"
+      },
+      {
+        "year": "2013",
+        "desc": "Development and mass production of cold trim die for hot stamping parts"
+      },
+      {
+        "year": "2013",
+        "desc": "Patent applications for cold trim die (Korea, USA, China, Germany)"
+      },
+      { "year": "2015", "desc": "Excellence Award in Industry Innovation 3.0" },
+      { "year": "2022", "desc": "Spin-off of TNP into TNQ" },
+      {
+        "year": "2023",
+        "desc": "Registered as Hyundai/Kia 1st-tier supplier, started business"
+      },
+      { "year": "2024", "desc": "Revenue exceeded 10 billion KRW" },
+      { "year": "2025", "desc": "CEO Kim Jung-ho appointed" }
+    ],
+    "sectionOrgCaption": "Organization",
+    "sectionOrgTitle": "Organization",
+    "altOrgChart": "Organization chart",
+    "sectionPatentsCaption": "Patents",
+    "sectionPatentsTitle": "Patents",
+    "patentLabels": ["Korea", "Korea", "USA", "Germany", "China"],
+    "sectionCustomersCaption": "Main Customers",
+    "sectionCustomersTitle": "Main Customers",
+    "altMainCustomer": "Main customer",
+    "sectionLocationCaption": "Location",
+    "sectionLocationTitle": "Location"
+  },
+  "video": {
+    "bannerTitle": "Our technology and workplace in video",
+    "factoryCaption": "Factory Video",
+    "factoryTitle": "TNQ Factory Video",
+    "factoryVideo1Title": "TNQ Factory Overview 1",
+    "factoryVideo2Title": "TNQ Factory Overview 2",
+    "hotStampingCaption": "Hot Stamping Video",
+    "hotStampingTitle": "TNQ Hot Stamping Video",
+    "hotStampingVideo1Title": "TNQ Hot Stamping T/O CTR PLR",
+    "hotStampingVideo2Title": "TNQ Hot Stamping T/O Video",
+    "hotStampingVideo3Title": "TNQ Hot Stamping T/O",
+    "hotStampingVideo4Title": "TNQ Hot Stamping T/O",
+    "galleryBannerTitle": "Gallery",
+    "gallerySectionCaption": "Gallery",
+    "gallerySectionTitle": "Gallery",
+    "galleryFilterAll": "All",
+    "galleryFilterFactory": "Factory",
+    "galleryFilterSimu": "Opening Ceremony",
+    "galleryImageAlt": "Gallery {index}"
+  },
+  "customerCenter": {
+    "noticeCaption": "NOTICE",
+    "noticeTitle": "Notice & Announcements",
+    "productInquiryCaption": "Product Inquiry",
+    "productInquirySubtitle": "We'll get back to you.",
+    "formHoneypotLabel": "Company website (leave blank)",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Enter a nickname, not your real name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "Enter your email",
+    "formMessageLabel": "Inquiry",
+    "formMessagePlaceholder": "Enter your inquiry",
+    "formPrivacyTip": "We do not collect personal information. Please do not include personal information in your message.",
+    "formSubmitSending": "Sending…",
+    "formSubmitButton": "Send inquiry",
+    "errorRequired": "Please fill in all required fields.",
+    "errorRecaptcha": "Please complete the security verification.",
+    "errorSendFailed": "Failed to send.",
+    "successSent": "Your inquiry has been received. We will get back to you soon.",
+    "errorNetwork": "A network error occurred. Please try again.",
+    "faq": [
+      {
+        "question": "TNQ website has been renewed.",
+        "answer": "Hello, this is TNQ. Our official website has been renewed.\nWe will provide TNQ's technology and news more conveniently through company introduction, equipment, business information and more.\nWe look forward to your continued interest and visits.\nThank you."
+      },
+      {
+        "question": "Precision machining equipment expansion",
+        "answer": "TNQ has introduced additional precision machining equipment for higher quality die manufacturing.\nThrough this expansion, we will improve production efficiency and machining precision to provide you with stable quality products.\nWe will continue to provide better services through ongoing investment and equipment improvement."
+      },
+      {
+        "question": "Quality management system enhancement",
+        "answer": "TNQ has strengthened measurement and inspection processes to improve product quality.\nWe are increasing product reliability and stability through precision measurement equipment and a systematic quality management system.\nWe will continue to strive to provide quality you can trust."
+      },
+      {
+        "question": "Product and technical inquiries",
+        "answer": "TNQ accepts product and technical inquiries regarding die manufacturing and machining at any time.\nPlease contact us through the inquiry page or contact information, and our staff will assist you promptly.\nWe look forward to your inquiries and interest."
+      }
+    ]
+  },
+  "business": {
+    "bannerTitle": "Creating customer value through precision manufacturing technology.",
+    "section1Caption": "HPF DIE",
+    "section1Title": "HOT STAMPING DIE - Engineering",
+    "section2Caption": "HPF DIE",
+    "section2Title": "HOT STAMPING DIE - Production",
+    "section3Caption": "CS DIE",
+    "section3Title": "COLD STAMPING DIE - Engineering",
+    "section4Caption": "CS DIE",
+    "section4Title": "COLD STAMPING DIE - Production",
+    "section5Caption": "HS TRIM'G DIE",
+    "section5Title": "HOT STAMPING TRIM'G DIE - Engineering",
+    "section6Caption": "HS TRIM'G DIE",
+    "section6Title": "HOT STAMPING TRIM'G DIE - Production",
+    "altHsdie1": "HOT STAMPING DIE Engineering",
+    "altHsdie2": "HOT STAMPING DIE Production",
+    "altCsdie1": "COLD STAMPING DIE Engineering",
+    "altCsdie2": "COLD STAMPING DIE Production",
+    "altHstdie": "HOT STAMPING TRIM'G DIE Engineering",
+    "altHstdie2": "HOT STAMPING TRIM'G DIE Production",
+    "hsdie1": [
+      {
+        "title": "1. Forming analysis",
+        "items": [
+          "Major strain check (stiffness)",
+          "Minor strain check (bending)",
+          "Slip line, shock line check",
+          "Wrinkle check",
+          "Bending check",
+          "Springback check",
+          "Material reduction rate check"
+        ]
+      },
+      {
+        "title": "2. Process design",
+        "items": [
+          "Forming force (production press)",
+          "PAD'G force",
+          "Blank holder pressure",
+          "Bead zone and type",
+          "Profile and die face",
+          "Trial shape and blank size",
+          "Material yield and blank size"
+        ]
+      },
+      {
+        "title": "3. Die design",
+        "items": [
+          "Die design for production equipment",
+          "Die design for process",
+          "Cost-reduction die design",
+          "Thrust control design",
+          "Robust structure design",
+          "Safety design",
+          "Customer-oriented design"
+        ]
+      },
+      {
+        "title": "4. Flow analysis",
+        "items": [
+          "Cooling channel flow analysis",
+          "Upper/lower, PAD, B/H flow analysis",
+          "Convergence and branch vortex analysis",
+          "Coolant pressure analysis",
+          "Coolant channel sizing",
+          "Coolant channel layout and quantity"
+        ]
+      }
+    ],
+    "hsdie2": [
+      {
+        "title": "1. Pattern & casting",
+        "items": [
+          "Pattern making",
+          "Pattern inspection",
+          "Casting",
+          "Casting inspection"
+        ]
+      },
+      {
+        "title": "2. Steel & casting machining",
+        "items": [
+          "Casting, steel, base plate facing",
+          "Shape steel machining",
+          "Shape rough/finish machining",
+          "Heat treatment and polishing",
+          "Casting + steel assembly",
+          "Shape face finishing"
+        ]
+      },
+      {
+        "title": "3. Die parts assembly",
+        "items": [
+          "Pipe parts assembly",
+          "Pressure parts assembly",
+          "Gauge assembly",
+          "Guide parts assembly",
+          "Accessory assembly",
+          "Safety parts assembly"
+        ]
+      },
+      {
+        "title": "4. T/O & quality tuning",
+        "items": [
+          "Tryout for trim line",
+          "Die matching and tuning",
+          "Material t check (lead)",
+          "Formability tryout",
+          "Quality check after laser cut",
+          "Corrective action from quality results"
+        ]
+      }
+    ],
+    "csdie1": [
+      {
+        "title": "1. Forming analysis",
+        "items": [
+          "Major strain check (stiffness)",
+          "Minor strain check (bending)",
+          "Slip line, shock line check",
+          "Wrinkle check",
+          "Bending check",
+          "Springback check",
+          "Material reduction rate check"
+        ]
+      },
+      {
+        "title": "2. Process design",
+        "items": [
+          "Forming force (production press)",
+          "PAD'G force",
+          "Blank holder pressure",
+          "Bead zone and type",
+          "Profile and die face",
+          "Trial shape and blank size",
+          "Material yield and blank size"
+        ]
+      },
+      {
+        "title": "3. Layout design",
+        "items": [
+          "Process layout",
+          "Trim process and scrap flow",
+          "Forming pressure per process",
+          "Process reflecting customer requirements",
+          "Automation layout",
+          "Safety design",
+          "Customer-oriented design"
+        ]
+      },
+      {
+        "title": "4. Process design",
+        "items": [
+          "Process design from layout",
+          "Structure for production equipment",
+          "Durability for volume",
+          "Automation design",
+          "Robust structure",
+          "Scrap handling review"
+        ]
+      }
+    ],
+    "hstdie": [
+      {
+        "title": "1. Process design",
+        "items": [
+          "Trim/cut trim zone",
+          "Trim process split",
+          "Relief zone",
+          "Trim insert zone",
+          "Trim force and press spec",
+          "Automation position and method",
+          "Scrap flow and process split"
+        ]
+      },
+      {
+        "title": "2. Process design",
+        "items": [
+          "Structure for production equipment",
+          "Structural stability",
+          "Steel split and relief",
+          "Trim insert and structure",
+          "Automation structure",
+          "Customer requirement structure",
+          "Material and reinforcement for volume"
+        ]
+      }
+    ],
+    "hstdie2": [
+      {
+        "title": "1. Pattern & casting",
+        "items": [
+          "Pattern making",
+          "Pattern inspection",
+          "Casting",
+          "Casting inspection"
+        ]
+      },
+      {
+        "title": "2. Steel & casting machining",
+        "items": [
+          "Casting, steel, PAD facing",
+          "Shape steel facing",
+          "Shape rough/finish machining",
+          "Steel, cast iron, casting assembly",
+          "Shape face finishing",
+          "Trim insert WIRE machining",
+          "Heat treatment and coating (after final QA)"
+        ]
+      },
+      {
+        "title": "3. Die parts assembly",
+        "items": [
+          "Guide parts assembly",
+          "Pressure parts assembly",
+          "Gauge assembly",
+          "Trim, pierce, cam parts assembly",
+          "Accessory assembly",
+          "Safety parts assembly"
+        ]
+      },
+      {
+        "title": "4. T/O & quality tuning",
+        "items": [
+          "Tryout for trim line",
+          "Die matching and tuning",
+          "Material t check (lead)",
+          "Formability tryout",
+          "Quality check after full T/O",
+          "Corrective action from quality results"
+        ]
+      }
+    ],
+    "csdie2": [
+      {
+        "title": "1. Pattern & casting",
+        "items": [
+          "Pattern making",
+          "Pattern inspection",
+          "Casting",
+          "Casting inspection"
+        ]
+      },
+      {
+        "title": "2. Steel & casting machining",
+        "items": [
+          "Casting, steel, PAD, B/H facing",
+          "Shape steel facing",
+          "Shape rough/finish machining",
+          "Steel, cast iron, casting assembly",
+          "Shape face finishing",
+          "Trim, FL steel finishing",
+          "Heat treatment and coating (after final QA)"
+        ]
+      },
+      {
+        "title": "3. Die parts assembly",
+        "items": [
+          "Guide parts assembly",
+          "Pressure parts assembly",
+          "Gauge assembly",
+          "Trim, pierce, cam parts assembly",
+          "Accessory assembly",
+          "Safety parts assembly"
+        ]
+      },
+      {
+        "title": "4. T/O & quality tuning",
+        "items": [
+          "Tryout for trim line",
+          "Die matching and tuning",
+          "Material t check (lead)",
+          "Formability tryout",
+          "Quality check after full T/O",
+          "Corrective action from quality results"
+        ]
+      }
+    ]
+  },
+  "equipment": {
+    "bannerTitle": "Technology and equipment that deliver precision",
+    "section1Caption": "Machining Equipment",
+    "section1Title": "Machining - Large (5-axis)",
+    "section2Caption": "Machining Equipment",
+    "section2Title": "Machining - Large (General)",
+    "section3Caption": "Machining Equipment",
+    "section3Title": "Machining - Small (General)",
+    "section4Caption": "Testing Equipment",
+    "section4Title": "Trial Run - HOT STAMP'G T/O",
+    "section5Caption": "Testing Equipment",
+    "section5Title": "Trial Run - Mechanized Press",
+    "section6Caption": "Testing Equipment",
+    "section6Title": "Trial Run - Hydraulic Press",
+    "section7Caption": "Heat Treatment & Coating Equipment",
+    "section7Title": "Heat Treatment & Coating",
+    "section8Caption": "Measurement & Inspection Equipment",
+    "section8Title": "Measurement & Inspection",
+    "gagong1": [
+      {
+        "title": "1. SNK RB-5VM/CS",
+        "items": [
+          "TABLE : 2500 X 5000",
+          "Max machining size : 2900 X 5000 X 2000h",
+          "8000RPM,",
+          "1°, 90° index center swing"
+        ]
+      },
+      {
+        "title": "2. OKUMA MCR-B2",
+        "items": [
+          "TABLE : 2000 X 4000",
+          "Max machining size : 2500 X 4000 X 1200h",
+          "6000RPM,",
+          "5°, 90° index center swing"
+        ]
+      }
+    ],
+    "gagong2": [
+      {
+        "title": "1.SNK RB-4N",
+        "items": [
+          "TABLE SIZE : 2500 X 5000",
+          "MAX machining size : 2900 X 5000",
+          "RPM 4000"
+        ]
+      },
+      {
+        "title": "2.OKUMA MCV",
+        "items": [
+          "TABLE SIZE : 2000 X 4000",
+          "MAX machining size : 2400 X 4000",
+          "RPM 2000"
+        ]
+      },
+      {
+        "title": "3.MITSUBISHI",
+        "items": [
+          "TABLE SIZE : 1500 X 4000",
+          "MAX machining size : 2000 X 4000",
+          "RPM 4000",
+          "90° universal"
+        ]
+      },
+      {
+        "title": "4.DOOSAN MB-860",
+        "items": [
+          "TABLE SIZE : 800 X 2000",
+          "MAX machining size : 800 X 2000",
+          "RPM 8000"
+        ]
+      }
+    ],
+    "gagong3": [
+      { "title": "1. Double-head milling", "items": [] },
+      { "title": "2. General milling", "items": [] },
+      { "title": "3. Radial drill", "items": ["SIZE : 2000", "1600", "1200"] },
+      { "title": "4. General lathe", "items": [] },
+      { "title": "5. General grinder", "items": [] },
+      {
+        "title": "6. Small MCT",
+        "items": ["SIZE : 400 X 800", "3-axis", "400 X 800", "4-axis"]
+      }
+    ],
+    "siunjun1": [
+      {
+        "title": "1. 800 Ton hydraulic press",
+        "items": [
+          "Maker : Gukdong Press",
+          "Hot stamping high-speed press",
+          "MAX forming force 800 ton",
+          "TABLE SIZE : 2800 X 3500",
+          "MAX HEIGHT : 2200",
+          "Robot automation"
+        ]
+      },
+      {
+        "title": "2. T/O furnace & chiller",
+        "items": [
+          "Maker : Shinsung",
+          "MAX 1200°C electric furnace",
+          "Furnace SIZE : 2300 X 3000",
+          "Auto-loading robot & transfer",
+          "Material positioning table",
+          "Chiller for coolant (MAX 3bar)"
+        ]
+      },
+      { "title": "3.HOT STAMP'G T/O", "items": [] },
+      { "title": "4.HOT STAMP'G T/O", "items": [] },
+      { "title": "5.HOT STAMP'G T/O", "items": [] }
+    ],
+    "siunjun2": [
+      {
+        "title": "1. 1200 Ton mechanized press",
+        "items": [
+          "MAKER : ROBUS 1200 Ton",
+          "TABLE SIZE : 2500 X 4000",
+          "RAM STROKE : 700",
+          "DIE HEIGHT : 700~1400",
+          "DIE CUSHION : 0~400",
+          "FORCE METER"
+        ]
+      },
+      {
+        "title": "2. 1200 Ton mechanized press",
+        "items": [
+          "MAKER : KOBE 1200 Ton",
+          "TABLE SIZE : 2000 X 3000",
+          "RAM STROKE : 700",
+          "DIE HEIGHT : 700~1200",
+          "DIE CUSHION : 0~300"
+        ]
+      }
+    ],
+    "siunjun3": [
+      {
+        "title": "1. 1000 Ton hydraulic press",
+        "items": [
+          "MAKER : JUNGWOO 1000 Ton",
+          "TABLE SIZE : 2500 X 4500",
+          "RAM STROKE : 1200",
+          "DIE HEIGHT : 700~2000",
+          "DIE CUSHION : 0~400",
+          "Die assembly and tryout"
+        ]
+      },
+      {
+        "title": "2. 800 Ton hydraulic press",
+        "items": [
+          "MAKER : Gukdong 800 Ton",
+          "TABLE SIZE : 2800 X 3500",
+          "RAM STROKE : 1200",
+          "DIE HEIGHT : 700~2000",
+          "DIE CUSHION : None",
+          "Hot stamping T/O, tryout and assembly"
+        ]
+      }
+    ],
+    "yulchuri": [
+      { "title": "1. Vacuum heat treatment", "items": [] },
+      { "title": "2. Vacuum furnace (5 units)", "items": [] },
+      { "title": "3. Tempering furnace", "items": [] },
+      { "title": "4. Ion nitriding furnace (2 units)", "items": [] }
+    ],
+    "chukjung": [
+      { "title": "1. CMM", "items": [] },
+      { "title": "2. 3D measuring machine", "items": [] },
+      { "title": "3. 3D scanner", "items": [] },
+      { "title": "4. Hardness tester", "items": [] },
+      { "title": "5. Inspection room", "items": [] }
+    ]
   }
 }

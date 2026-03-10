@@ -4,15 +4,19 @@ import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
 import Faq from "@/components/common/Faq";
 import { menuTNQ21 } from "@/data/menuTNQ21";
+import { getTranslations } from "next-intl/server";
 
 const ABOUT_IMG = "/assets/images/tnq21/about";
 
-export const metadata = {
-  title: "TNQ21 || 공지사항",
-  description: "TNQ21 공지사항",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return { title: t("noticeTitle"), description: t("noticeDesc") };
+}
 
-export default function CustomerCenterNoticePage() {
+export default async function CustomerCenterNoticePage() {
+  const t = await getTranslations("customerCenter");
+  const faqData = t.raw("faq") ?? [];
+
   return (
     <>
       <div className="theme-main dark-mode">
@@ -24,9 +28,7 @@ export default function CustomerCenterNoticePage() {
             <section className="page-section pt-0 pb-0" id="home">
               <ParallaxContainer
                 className="page-section pb-100 pb-sm-60 bg-dark-1 bg-dark-alpha-70 light-content parallax-5"
-                style={{
-                  backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)`,
-                }}
+                style={{ backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)` }}
               >
                 <>
                   <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark"></div>
@@ -38,11 +40,11 @@ export default function CustomerCenterNoticePage() {
                             className="section-caption-border mb-30 mb-xs-20 wow fadeInUp"
                             data-wow-duration="1.2s"
                           >
-                            NOTICE
+                            {t("noticeCaption")}
                           </h2>
                           <h1 className="hs-title-1 mb-0">
                             <span className="wow charsAnimIn" data-splitting="chars">
-                              <AnimatedText text="Notice &amp; Announcements" />
+                              <AnimatedText text={t("noticeTitle")} />
                             </span>
                           </h1>
                         </div>
@@ -56,7 +58,7 @@ export default function CustomerCenterNoticePage() {
               <div className="container relative wow fadeInUp">
                 <div className="row mb-30">
                   <div className="col-md-8 offset-md-2">
-                    <Faq />
+                    <Faq faqData={faqData} />
                   </div>
                 </div>
               </div>

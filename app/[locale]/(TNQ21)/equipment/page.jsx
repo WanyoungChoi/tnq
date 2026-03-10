@@ -8,10 +8,12 @@ import { menuTNQ21 } from "@/data/menuTNQ21";
 const ABOUT_IMG = "/assets/images/tnq21/about";
 const E = "/assets/images/tnq21/equipment";
 
-export const metadata = {
-  title: "TNQ21 || 설비현황",
-  description: "TNQ21 설비현황",
-};
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return { title: t("equipmentTitle"), description: t("equipmentDesc") };
+}
 
 function SectionTitle({ caption, title }) {
   return (
@@ -60,101 +62,57 @@ function ItemList({ items }) {
   );
 }
 
-// Section 2: 가공 설비 - 대형 설비 (5축 가공기) — gagong1, 2 images
-const GAGONG1_BLOCKS = [
-  {
-    imageSrc: `${E}/gagong1/image001.png`,
-    title: "1. SNK RB-5VM/CS",
-    items: ["TABLE : 2500 X 5000", "최대 가공크기 : 2900 X 5000 X 2000h", "8000RPM,", "1도, 90도 분할 센터스윙"],
-  },
-  {
-    imageSrc: `${E}/gagong1/image002.png`,
-    title: "2. OKUMA MCR-B2",
-    items: ["TABLE : 2000 X 4000", "최대 가공크기 : 2500 X 4000 X 1200h", "6000RPM,", "5도, 90도 분할 센터스윙"],
-  },
+const GAGONG1_CONFIG = [
+  { imageSrc: `${E}/gagong1/image001.png` }, { imageSrc: `${E}/gagong1/image002.png` },
+];
+const GAGONG2_CONFIG = [
+  { imageSrc: `${E}/gagong2/image001.png` }, { imageSrc: `${E}/gagong2/image002.png` },
+  { imageSrc: `${E}/gagong2/image003.png` }, { imageSrc: `${E}/gagong2/image004.JPG` },
+];
+const GAGONG3_CONFIG = [
+  { imageSrc: `${E}/gagong3/image001.png` }, { imageSrc: `${E}/gagong3/image002.png` },
+  { imageSrc: `${E}/gagong3/image003.png` }, { imageSrc: `${E}/gagong3/image004.png` },
+  { imageSrc: `${E}/gagong3/image005.jpg` }, { imageSrc: `${E}/gagong3/image006.jpg` },
+];
+const SIUNJUN1_CONFIG = [
+  { imageSrc: `${E}/siunjun1/image001.png` }, { imageSrc: `${E}/siunjun1/image002.png` },
+  { imageSrc: `${E}/siunjun1/image003.png` }, { imageSrc: `${E}/siunjun1/image004.png` },
+  { imageSrc: `${E}/siunjun1/image005.png` },
+];
+const SIUNJUN2_CONFIG = [
+  { imageSrc: `${E}/siunjun2/image001.JPG` }, { imageSrc: `${E}/siunjun2/image002.JPG` },
+];
+const SIUNJUN3_CONFIG = [
+  { imageSrc: `${E}/siunjun3/image001.jpg` }, { imageSrc: `${E}/siunjun3/image002.jpg` },
+];
+const YULCHURI_CONFIG = [
+  { imageSrc: `${E}/yulchuri/image001.jpg` }, { imageSrc: `${E}/yulchuri/image002.jpg` },
+  { imageSrc: `${E}/yulchuri/image003.jpg` }, { imageSrc: `${E}/yulchuri/image004.jpg` },
+];
+const CHUKJUNG_CONFIG = [
+  { imageSrc: `${E}/chukjung/image001.jpg` }, { imageSrc: `${E}/chukjung/image002.jpg` },
+  { imageSrc: `${E}/chukjung/image003.jpg` }, { imageSrc: `${E}/chukjung/image004.jpg` },
+  { imageSrc: `${E}/chukjung/image005.jpg` },
 ];
 
-// Section 3: 가공 설비 - 대형 설비 (범용) — gagong2, 4 images
-const GAGONG2_BLOCKS = [
-  { imageSrc: `${E}/gagong2/image001.png`, title: "1.SNK RB-4N", items: ["TABLE SIZE : 2500 X 5000", "MAX 가공사이즈 : 2900 X 5000", "RPM 4000"] },
-  { imageSrc: `${E}/gagong2/image002.png`, title: "2.OKUMA MCV", items: ["TABLE SIZE : 2000 X 4000", "MAX 가공사이즈 : 2400 X 4000", "RPM 2000"] },
-  { imageSrc: `${E}/gagong2/image003.png`, title: "3.MITUBISHI", items: ["TABLE SIZE : 1500 X 4000", "MAX 가공사이즈 : 2000 X 4000", "RPM 4000", "90도 유니버셜"] },
-  { imageSrc: `${E}/gagong2/image004.JPG`, title: "4.DOOSAN MB-860", items: ["TABLE SIZE : 800 X 2000", "MAX 가공사이즈 : 800 X 2000", "RPM 8000"] },
-];
+const EQUIPMENT_ITEM_COUNTS = {
+  gagong1: [4, 4],
+  gagong2: [3, 3, 4, 3],
+  gagong3: [0, 0, 3, 0, 0, 4],
+  siunjun1: [6, 6, 0, 0, 0],
+  siunjun2: [6, 5],
+  siunjun3: [6, 6],
+  yulchuri: [0, 0, 0, 0],
+  chukjung: [0, 0, 0, 0, 0],
+};
 
-// Section 4: 가공 설비 - 소형 설비 (범용) — gagong3, 6 images
-const GAGONG3_BLOCKS = [
-  { imageSrc: `${E}/gagong3/image001.png`, title: "1.양두 밀링", items: [] },
-  { imageSrc: `${E}/gagong3/image002.png`, title: "2.범용밀링", items: [] },
-  { imageSrc: `${E}/gagong3/image003.png`, title: "3.레디얼머신", items: ["SIZE : 2000", "1600", "1200"] },
-  { imageSrc: `${E}/gagong3/image004.png`, title: "4.범용선반", items: [] },
-  { imageSrc: `${E}/gagong3/image005.jpg`, title: "5.범용연마기", items: [] },
-  { imageSrc: `${E}/gagong3/image006.jpg`, title: "6.소형MCT", items: ["SIZE : 400 X 800", "3축", "400 X 800", "4축"] },
-];
+export default async function TNQ21EquipmentPage() {
+  const t = await getTranslations("equipment");
 
-// Section 5: 시운전 설비 - HOT STAMP'G T/O — siunjun1, 5 images
-const SIUNJUN1_BLOCKS = [
-  {
-    imageSrc: `${E}/siunjun1/image001.png`,
-    title: "1.800톤 유압 프레스",
-    items: ["메이커 : 극동프레스", "핫스템핑 전용 고속 하강 프레스", "MAX 성형압 800 톤", "TABLE SIZE : 2800 X 3500", "MAX HEIGHT : 2200", "로봇 자동화 장치"],
-  },
-  {
-    imageSrc: `${E}/siunjun1/image002.png`,
-    title: "2.T/O용 가열로, 냉각기",
-    items: ["메이커 : 신성열연", "MAX 1200도 전기식 가열로", "가열로 SIZE : 2300 X 3000", "자동투입식 로봇 및 대차", "소재위치결정용 테이블", "냉각수 공급용 칠러( MAX 3bar )"],
-  },
-  { imageSrc: `${E}/siunjun1/image003.png`, title: "3.HOT STAMP'G T/O", items: [] },
-  { imageSrc: `${E}/siunjun1/image004.png`, title: "4.HOT STAMP'G T/O", items: [] },
-  { imageSrc: `${E}/siunjun1/image005.png`, title: "5.HOT STAMP'G T/O", items: [] },
-];
+  const getBlockTitle = (sectionKey, i) => t(`${sectionKey}.${i}.title`);
+  const getBlockItems = (sectionKey, i, count) =>
+    count > 0 ? Array.from({ length: count }, (_, j) => t(`${sectionKey}.${i}.items.${j}`)) : [];
 
-// Section 6: 시운전 설비 - 메카 프레스 — siunjun2, 2 images
-const SIUNJUN2_BLOCKS = [
-  {
-    imageSrc: `${E}/siunjun2/image001.JPG`,
-    title: "1. 1200 Ton메카 프레스",
-    items: ["MAKER : ROBUS 1200 Ton", "TABLE SIZE : 2500 X 4000", "RAM STROKE : 700", "DIE HEIGHT : 700~1400", "DIE CUSHION : 0~400", "FORCE METER"],
-  },
-  {
-    imageSrc: `${E}/siunjun2/image002.JPG`,
-    title: "2. 1200Ton 메카 프레스",
-    items: ["MAKER : KOBE 1200 Ton", "TABLE SIZE : 2000 X 3000", "RAM STROKE : 700", "DIE HEIGHT : 700~1200", "DIE CUSHION : 0~300"],
-  },
-];
-
-// Section 7: 시운전 설비 - 유압 프레스 — siunjun3, 2 images
-const SIUNJUN3_BLOCKS = [
-  {
-    imageSrc: `${E}/siunjun3/image001.jpg`,
-    title: "1. 1000 Ton유압 프레스",
-    items: ["MAKER : JUNGWOO 1000 Ton", "TABLE SIZE : 2500 X 4500", "RAM STROKE : 1200", "DIE HEIGHT : 700~2000", "DIE CUSHION : 0~400", "금형 조립 및 형합 작업용"],
-  },
-  {
-    imageSrc: `${E}/siunjun3/image002.jpg`,
-    title: "2. 800 Ton유압 프레스",
-    items: ["MAKER : 극동 800 Ton", "TABLE SIZE : 2800 X 3500", "RAM STROKE : 1200", "DIE HEIGHT : 700~2000", "DIE CUSHION : 없음", "핫스테밍 T/O 및 형합 및 조립용"],
-  },
-];
-
-// Section 8: 열처리,코팅 설비 - 열처리 설비 — yulchuri, 4 images
-const YULCHURI_BLOCKS = [
-  { imageSrc: `${E}/yulchuri/image001.jpg`, title: "1.진공열처리", items: [] },
-  { imageSrc: `${E}/yulchuri/image002.jpg`, title: "2.진공로-5기", items: [] },
-  { imageSrc: `${E}/yulchuri/image003.jpg`, title: "3.템퍼링로", items: [] },
-  { imageSrc: `${E}/yulchuri/image004.jpg`, title: "4.이온질화로-2기", items: [] },
-];
-
-// Section 9: 측정 및 검사설비 - 측정 설비 — chukjung, 5 images
-const CHUKJUNG_BLOCKS = [
-  { imageSrc: `${E}/chukjung/image001.jpg`, title: "1.CMM 측정기", items: [] },
-  { imageSrc: `${E}/chukjung/image002.jpg`, title: "2.3차원 측정기", items: [] },
-  { imageSrc: `${E}/chukjung/image003.jpg`, title: "3.3D 스캐너", items: [] },
-  { imageSrc: `${E}/chukjung/image004.jpg`, title: "4.경도측정기", items: [] },
-  { imageSrc: `${E}/chukjung/image005.jpg`, title: "5.검사실", items: [] },
-];
-
-export default function TNQ21EquipmentPage() {
   return (
     <>
       <div className="theme-main dark-mode">
@@ -163,7 +121,6 @@ export default function TNQ21EquipmentPage() {
             <Header1Multipage links={menuTNQ21} />
           </nav>
           <main id="main">
-            {/* 1. top 배너 */}
             <section className="scrollSpysection about-hero-banner">
               <ParallaxContainer
                 className="page-section bg-dark-1 bg-dark-alpha-80 light-content parallax-5"
@@ -175,7 +132,7 @@ export default function TNQ21EquipmentPage() {
                       <div className="col-md-8 offset-md-2">
                         <h1 className="hs-title-1 mb-0">
                           <span className="wow charsAnimIn" data-splitting="chars">
-                            <AnimatedText text="정밀도를 완성하는 기술과 설비" />
+                            <AnimatedText text={t("bannerTitle")} />
                           </span>
                         </h1>
                       </div>
@@ -185,97 +142,129 @@ export default function TNQ21EquipmentPage() {
               </ParallaxContainer>
             </section>
 
-            {/* 2. 가공 설비 - 대형 설비 (5축 가공기) — id=machining */}
             <section id="machining" className="scrollSpysection page-section bg-dark-2 light-content">
               <div className="container">
-                <SectionTitle caption="Machining Equipment" title="가공 설비 - 대형 설비 (5축 가공기)" />
-                {GAGONG1_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section1Caption")} title={t("section1Title")} />
+                {GAGONG1_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("gagong1", i)}
+                    title={getBlockTitle("gagong1", i)}
+                  >
+                    <ItemList items={getBlockItems("gagong1", i, EQUIPMENT_ITEM_COUNTS.gagong1[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 3. 가공 설비 - 대형 설비 (범용) */}
             <section className="scrollSpysection page-section bg-dark-1 light-content">
               <div className="container">
-                <SectionTitle caption="Machining Equipment" title="가공 설비 - 대형 설비 (범용)" />
-                {GAGONG2_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section2Caption")} title={t("section2Title")} />
+                {GAGONG2_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("gagong2", i)}
+                    title={getBlockTitle("gagong2", i)}
+                  >
+                    <ItemList items={getBlockItems("gagong2", i, EQUIPMENT_ITEM_COUNTS.gagong2[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 4. 가공 설비 - 소형 설비 (범용) */}
             <section className="scrollSpysection page-section bg-dark-2 light-content">
               <div className="container">
-                <SectionTitle caption="Machining Equipment" title="가공 설비 - 소형 설비 (범용)" />
-                {GAGONG3_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section3Caption")} title={t("section3Title")} />
+                {GAGONG3_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("gagong3", i)}
+                    title={getBlockTitle("gagong3", i)}
+                  >
+                    <ItemList items={getBlockItems("gagong3", i, EQUIPMENT_ITEM_COUNTS.gagong3[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 5. 시운전 설비 - HOT STAMP'G T/O — id=trial-run */}
             <section id="trial-run" className="scrollSpysection page-section bg-dark-1 light-content">
               <div className="container">
-                <SectionTitle caption="Testing Equipment" title="시운전 설비 - HOT STAMP'G T/O" />
-                {SIUNJUN1_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section4Caption")} title={t("section4Title")} />
+                {SIUNJUN1_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("siunjun1", i)}
+                    title={getBlockTitle("siunjun1", i)}
+                  >
+                    <ItemList items={getBlockItems("siunjun1", i, EQUIPMENT_ITEM_COUNTS.siunjun1[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 6. 시운전 설비 - 메카 프레스 */}
             <section className="scrollSpysection page-section bg-dark-2 light-content">
               <div className="container">
-                <SectionTitle caption="Testing Equipment" title="시운전 설비 - 메카 프레스" />
-                {SIUNJUN2_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section5Caption")} title={t("section5Title")} />
+                {SIUNJUN2_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("siunjun2", i)}
+                    title={getBlockTitle("siunjun2", i)}
+                  >
+                    <ItemList items={getBlockItems("siunjun2", i, EQUIPMENT_ITEM_COUNTS.siunjun2[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 7. 시운전 설비 - 유압 프레스 */}
             <section className="scrollSpysection page-section bg-dark-1 light-content">
               <div className="container">
-                <SectionTitle caption="Testing Equipment" title="시운전 설비 - 유압 프레스" />
-                {SIUNJUN3_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section6Caption")} title={t("section6Title")} />
+                {SIUNJUN3_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("siunjun3", i)}
+                    title={getBlockTitle("siunjun3", i)}
+                  >
+                    <ItemList items={getBlockItems("siunjun3", i, EQUIPMENT_ITEM_COUNTS.siunjun3[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 8. 열처리,코팅 설비 - 열처리 설비 — id=heat-treatment-coating */}
             <section id="heat-treatment-coating" className="scrollSpysection page-section bg-dark-2 light-content">
               <div className="container">
-                <SectionTitle caption="Heat Treatment & Coating Equipmen" title="열처리,코팅 설비 - 열처리 설비" />
-                {YULCHURI_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section7Caption")} title={t("section7Title")} />
+                {YULCHURI_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("yulchuri", i)}
+                    title={getBlockTitle("yulchuri", i)}
+                  >
+                    <ItemList items={getBlockItems("yulchuri", i, EQUIPMENT_ITEM_COUNTS.yulchuri[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>
             </section>
 
-            {/* 9. 측정 및 검사설비 - 측정 설비 — id=measurement-inspection */}
             <section id="measurement-inspection" className="scrollSpysection page-section bg-dark-1 light-content">
               <div className="container">
-                <SectionTitle caption="Measurement & Inspection Equipment" title="측정 및 검사설비 - 측정 설비" />
-                {CHUKJUNG_BLOCKS.map((block, i) => (
-                  <EquipmentContentBlock key={i} imageSrc={block.imageSrc} imageAlt={block.title} title={block.title}>
-                    <ItemList items={block.items} />
+                <SectionTitle caption={t("section8Caption")} title={t("section8Title")} />
+                {CHUKJUNG_CONFIG.map((block, i) => (
+                  <EquipmentContentBlock
+                    key={i}
+                    imageSrc={block.imageSrc}
+                    imageAlt={getBlockTitle("chukjung", i)}
+                    title={getBlockTitle("chukjung", i)}
+                  >
+                    <ItemList items={getBlockItems("chukjung", i, EQUIPMENT_ITEM_COUNTS.chukjung[i])} />
                   </EquipmentContentBlock>
                 ))}
               </div>

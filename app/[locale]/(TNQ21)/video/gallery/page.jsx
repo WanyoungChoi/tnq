@@ -4,13 +4,14 @@ import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
 import VideoGalleryGrid from "@/components/gallery/VideoGalleryGrid";
 import { menuTNQ21 } from "@/data/menuTNQ21";
+import { getTranslations } from "next-intl/server";
 
 const ABOUT_IMG = "/assets/images/tnq21/about";
 
-export const metadata = {
-  title: "TNQ21 || 갤러리",
-  description: "TNQ21 갤러리",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return { title: t("galleryTitle"), description: t("galleryDesc") };
+}
 
 function SectionTitle({ caption, title }) {
   return (
@@ -29,7 +30,8 @@ function SectionTitle({ caption, title }) {
   );
 }
 
-export default function TNQ21VideoGalleryPage() {
+export default async function TNQ21VideoGalleryPage() {
+  const t = await getTranslations("video");
   return (
     <>
       <div className="theme-main dark-mode">
@@ -66,7 +68,7 @@ export default function TNQ21VideoGalleryPage() {
               className="scrollSpysection page-section bg-dark-2 light-content"
             >
               <div className="container">
-                <SectionTitle caption="Gallery" title="갤러리" />
+                <SectionTitle caption={t("gallerySectionCaption")} title={t("gallerySectionTitle")} />
               </div>
               <VideoGalleryGrid />
             </section>

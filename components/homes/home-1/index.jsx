@@ -1,10 +1,12 @@
+"use client";
+
 import AnimatedText from "@/components/common/AnimatedText";
 import About from "@/components/homes/home-1/About";
 import Benefits from "@/components/homes/home-1/Benefits";
-import Contact from "@/components/homes/home-1/Contact";
 import Service from "@/components/homes/home-1/Service";
 import Team from "@/components/homes/home-1/Team";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function SectionHeader({
   caption,
@@ -39,6 +41,8 @@ function SectionHeader({
 }
 
 export default function Home1({ onePage = false, dark = false }) {
+  const t = useTranslations("main");
+
   return (
     <>
       <section
@@ -49,8 +53,8 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <SectionHeader
-            caption="Vision & Mission"
-            title="우리의 비전과 미션"
+            caption={t("visionMissionCaption")}
+            title={t("visionMissionTitle")}
             decoration="/assets/images/decoration-2.svg"
           />
           <About />
@@ -64,8 +68,8 @@ export default function Home1({ onePage = false, dark = false }) {
         id="team"
       >
         <SectionHeader
-          caption="Our Factory & Technology"
-          title="기술이 살아 숨 쉬는 공간"
+          caption={t("factoryCaption")}
+          title={t("factoryTitle")}
           decoration=""
         />
         <Team />
@@ -78,8 +82,8 @@ export default function Home1({ onePage = false, dark = false }) {
         id="services"
       >
         <SectionHeader
-          caption="Future Strategy"
-          title="미래를 향한 도전"
+          caption={t("futureStrategyCaption")}
+          title={t("futureStrategyTitle")}
           decoration=""
         />
         <Service />
@@ -88,7 +92,11 @@ export default function Home1({ onePage = false, dark = false }) {
       <section
         className={`page-section ${dark ? "bg-dark-1 light-content" : ""}`}
       >
-        <SectionHeader caption="Benefits" title="Why choose us" decoration="" />
+        <SectionHeader
+          caption={t("benefitsCaption")}
+          title={t("benefitsTitle")}
+          decoration=""
+        />
         <Benefits />
       </section>
     </>

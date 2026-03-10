@@ -4,8 +4,16 @@ import { galleryVideoFilters, galleryVideoItems } from "@/data/galleryVideo";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
+import { useTranslations } from "next-intl";
+
+const FILTER_LABEL_KEYS = {
+  all: "galleryFilterAll",
+  "cat-2026-factory": "galleryFilterFactory",
+  "cat-2026-simu": "galleryFilterSimu",
+};
 
 export default function VideoGalleryGrid() {
+  const t = useTranslations("video");
   const [currentCategory, setCurrentCategory] = useState("all");
   const isotopContainer = useRef();
   const isotope = useRef();
@@ -44,7 +52,7 @@ export default function VideoGalleryGrid() {
             key={i}
             className={`filter ${currentCategory === elm.category ? "active" : ""}`}
           >
-            {elm.name}
+            {t(FILTER_LABEL_KEYS[elm.category] ?? "galleryFilterAll")}
           </a>
         ))}
       </div>
@@ -69,7 +77,7 @@ export default function VideoGalleryGrid() {
                         <div className="work-img-bg" />
                         <Image
                           src={item.src}
-                          alt={`갤러리 ${index + 1}`}
+                          alt={t("galleryImageAlt", { index: index + 1 })}
                           width={400}
                           height={300}
                           className="w-100 h-auto object-fit-cover"

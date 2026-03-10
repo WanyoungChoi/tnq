@@ -3,13 +3,23 @@ import ParallaxContainer from "@/components/common/ParallaxContainer";
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
 import { menuTNQ21 } from "@/data/menuTNQ21";
+import { getTranslations } from "next-intl/server";
 
 const ABOUT_IMG = "/assets/images/tnq21/about";
 
-export const metadata = {
-  title: "TNQ21 || 홍보영상",
-  description: "TNQ21 홍보영상",
-};
+const FACTORY_VIDEO_IDS = [{ videoId: "DJ5cB7uOikY" }, { videoId: "05QtrCiNbw4" }];
+
+const HOT_STAMPING_VIDEOS = [
+  { videoId: "QCwb6L3kbV0" },
+  { videoId: "0m2s-ojKbO8" },
+  { videoId: "jZBPOHOxNuc" },
+  { videoId: "vsq46T8fCIM", isShorts: true },
+];
+
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return { title: t("videoTitle"), description: t("videoDesc") };
+}
 
 function SectionTitle({ caption, title }) {
   return (
@@ -28,19 +38,9 @@ function SectionTitle({ caption, title }) {
   );
 }
 
-const FACTORY_VIDEOS = [
-  { title: "TNQ 공장 전경_1", videoId: "DJ5cB7uOikY" },
-  { title: "TNQ 공장 전경_2", videoId: "05QtrCiNbw4" },
-];
+export default async function TNQ21VideoPage() {
+  const t = await getTranslations("video");
 
-const HOT_STAMPING_VIDEOS = [
-  { title: "TNQ 핫스템핑 T/O CTR PLR", videoId: "QCwb6L3kbV0" },
-  { title: "TNQ 핫스탬핑 T/O 동영상", videoId: "0m2s-ojKbO8" },
-  { title: "TNQ 핫스탬핑 T/O 영상", videoId: "jZBPOHOxNuc" },
-  { title: "TNQ 핫스템핑 T/O", videoId: "vsq46T8fCIM", isShorts: true },
-];
-
-export default function TNQ21VideoPage() {
   return (
     <>
       <div className="theme-main dark-mode">
@@ -52,9 +52,7 @@ export default function TNQ21VideoPage() {
             <section className="page-section pt-0 pb-0" id="home">
               <ParallaxContainer
                 className="page-section bg-dark-1 bg-dark-alpha-80 light-content parallax-5"
-                style={{
-                  backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)`,
-                }}
+                style={{ backgroundImage: `url(${ABOUT_IMG}/top_banner/banner.png)` }}
               >
                 <div className="container position-relative pt-30 pt-sm-50">
                   <div className="text-center">
@@ -62,7 +60,7 @@ export default function TNQ21VideoPage() {
                       <div className="col-md-8 offset-md-2">
                         <h1 className="hs-title-1 mb-20">
                           <span className="wow charsAnimIn" data-splitting="chars">
-                            <AnimatedText text="영상으로 보는 우리의 기술과 현장" />
+                            <AnimatedText text={t("bannerTitle")} />
                           </span>
                         </h1>
                       </div>
@@ -72,24 +70,20 @@ export default function TNQ21VideoPage() {
               </ParallaxContainer>
             </section>
 
-            {/* 두번째 섹션: Factory Video */}
             <section id="factory" className="page-section bg-dark-2 light-content scrollSpysection">
               <div className="container relative">
-                <SectionTitle caption="Factory Video" title="TNQ Factory Video" />
+                <SectionTitle caption={t("factoryCaption")} title={t("factoryTitle")} />
                 <div className="row mb-n40">
-                  {FACTORY_VIDEOS.map((item) => (
-                    <div
-                      key={item.videoId}
-                      className={`col-12 mb-40 ${item.isShorts ? "tnq-video-shorts-wrap" : ""}`}
-                    >
-                      <h3 className="section-title-sm mb-20">{item.title}</h3>
+                  {FACTORY_VIDEO_IDS.map((item, idx) => (
+                    <div key={item.videoId} className="col-12 mb-40">
+                      <h3 className="section-title-sm mb-20">{t(`factoryVideo${idx + 1}Title`)}</h3>
                       <div className="video">
                         <iframe
                           loading="lazy"
                           width="100%"
-                          height={item.isShorts ? 560 : 350}
+                          height={350}
                           src={`https://www.youtube.com/embed/${item.videoId}`}
-                          title={item.title}
+                          title={t(`factoryVideo${idx + 1}Title`)}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           allowFullScreen
                         />
@@ -100,24 +94,23 @@ export default function TNQ21VideoPage() {
               </div>
             </section>
 
-            {/* 세번째 섹션: Hot Stamping Video */}
             <section id="hot-stamping" className="page-section bg-dark-1 light-content scrollSpysection">
               <div className="container relative">
-                <SectionTitle caption="Hot Stamping Video" title="TNQ Hot Stamping Video" />
+                <SectionTitle caption={t("hotStampingCaption")} title={t("hotStampingTitle")} />
                 <div className="row mb-n40">
-                  {HOT_STAMPING_VIDEOS.map((item) => (
+                  {HOT_STAMPING_VIDEOS.map((item, idx) => (
                     <div
                       key={item.videoId}
                       className={`col-12 mb-40 ${item.isShorts ? "tnq-video-shorts-wrap" : ""}`}
                     >
-                      <h3 className="section-title-sm mb-20">{item.title}</h3>
+                      <h3 className="section-title-sm mb-20">{t(`hotStampingVideo${idx + 1}Title`)}</h3>
                       <div className="video">
                         <iframe
                           loading="lazy"
                           width="100%"
                           height={item.isShorts ? 560 : 350}
                           src={`https://www.youtube.com/embed/${item.videoId}`}
-                          title={item.title}
+                          title={t(`hotStampingVideo${idx + 1}Title`)}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           allowFullScreen
                         />

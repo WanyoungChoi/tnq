@@ -3,8 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { teamMembers } from "@/data/team";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Team() {
+  const t = useTranslations("main");
+  const quoteLines = t("teamQuote").split("\n");
+
   return (
     <div className="container position-relative">
       <div className="row">
@@ -15,21 +19,17 @@ export default function Team() {
               ”
             </div>
             <p className="section-descr">
-              최첨단 가공 설비와
-              <br />
-              체계적인 품질관리 시스템. <br />
-              작은 오차도 허용하지 않는 정밀 공정.
-              <br />
-              우리의 공장은
-              <br />
-              단순한 생산 공간이 아니라
-              <br />
-              신뢰가 만들어지는 현장입니다.
+              {quoteLines.map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i < quoteLines.length - 1 && <br />}
+                </span>
+              ))}
             </p>
             <footer className="section-descr">
               <div className="section-line mb-10" />
               <div>
-                충주산단 1로 185 용탄동 공장 <br />
+                {t("teamAddress")} <br />
                 <br />
                 <br />
               </div>

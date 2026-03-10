@@ -5,8 +5,11 @@ import { Link } from "@/i18n/navigation";
 import React from "react";
 import Nav2 from "./components/Nav2";
 import LanguageSelect from "./components/LanguageSelect";
+import { useTranslations } from "next-intl";
 
 export default function Header1Multipage({ links }) {
+  const t = useTranslations("common");
+
   return (
     <div className="main-nav-sub full-wrapper">
       {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
@@ -16,7 +19,7 @@ export default function Header1Multipage({ links }) {
         <Link href={`/`} className="logo">
           <Image
             src="/assets/images/tnq_logo_transparent.png"
-            alt="TNQ 로고"
+            alt={t("logoAlt")}
             width={180}
             height={34}
           />
@@ -30,7 +33,7 @@ export default function Header1Multipage({ links }) {
         tabIndex={0}
       >
         <i className="mobile-nav-icon" />
-        <span className="visually-hidden">Menu</span>
+        <span className="visually-hidden">{t("menuAria")}</span>
       </div>
       {/* Main Menu */}
       <div className="inner-nav desktop-nav">
