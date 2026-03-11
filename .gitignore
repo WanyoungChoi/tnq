@@ -35,3 +35,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# template demo routes (resonance) – reduces repo size and avoids "large diff" on GitHub
+# 실제 사용은 (TNQ21) 루트만 하므로 데모 페이지는 제외
+/app/\[locale\]/(homes)/
+/app/\[locale\]/(about)/
+/app/\[locale\]/(blogs)/
+/app/\[locale\]/(blog-single)/
+/app/\[locale\]/(services)/
+/app/\[locale\]/(elements)/
+/app/\[locale\]/(otherPages)/
+/app/\[locale\]/(portfolios)/
+/app/\[locale\]/(contact)/
+/app/\[locale\]/(main-pages)/

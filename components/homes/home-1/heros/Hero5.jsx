@@ -6,11 +6,13 @@ import { useTranslations } from "next-intl";
 import { init_wow } from "@/utlis/initWowjs";
 
 const VIDEO_SRC = "/assets/videos/main.mp4";
+const THUMB_SRC = "/assets/images/tnq21/main/thumb.JPG";
 
 export default function Hero5({ dark }) {
   const t = useTranslations("hero");
   const [showContent, setShowContent] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
+  const [isVideoReady, setIsVideoReady] = useState(false);
   const videoRef = useRef(null);
 
   const handleVideoEnded = () => {
@@ -36,24 +38,51 @@ export default function Hero5({ dark }) {
   return (
     <div className="position-relative hero5-wrap" style={{ minHeight: "100vh" }}>
       <div className="fullwidth-gallery-wrapper position-relative" style={{ minHeight: "100vh" }}>
+        {/* 비디오 로드 전 썸네일 표시 */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            minHeight: "100vh",
+            opacity: isVideoReady ? 0 : 1,
+            pointerEvents: isVideoReady ? "none" : "auto",
+            transition: "opacity 0.4s ease",
+            zIndex: 1,
+          }}
+          aria-hidden={isVideoReady}
+        >
+          <img
+            src={THUMB_SRC}
+            alt=""
+            className="w-100 h-100"
+            style={{
+              objectFit: "cover",
+              minHeight: "100vh",
+              width: "100%",
+              display: "block",
+              backgroundColor: "#111",
+            }}
+          />
+        </div>
         <video
           ref={videoRef}
-          className="w-100"
+          className="w-100 position-relative"
           style={{
             objectFit: "cover",
             minHeight: "100vh",
             width: "100%",
             display: "block",
             backgroundColor: "#111",
+            zIndex: 0,
           }}
           src={VIDEO_SRC}
           autoPlay
           muted={isMuted}
           playsInline
+          onCanPlay={() => setIsVideoReady(true)}
           onEnded={handleVideoEnded}
         />
         {/* 바깥→안쪽 검정 그라데이션 오버레이 */}
-        <div className="hero5-gradient-overlay" aria-hidden />
+        <div className="hero5-gradient-overlay" style={{ zIndex: 2 }} aria-hidden />
       </div>
       {/* 소리 켜기/끄기 버튼: 비디오 재생 중에만 표시 */}
       {!showContent && (
