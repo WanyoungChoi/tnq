@@ -66,4 +66,17 @@ export const menuTNQ21 = [
       },
     ],
   },
+  {
+    title: "esg",
+    subMenu: [
+      {
+        links: [
+          { href: "/esg/environmental", text: "environmental" },
+          { href: "/esg/social", text: "social" },
+          { href: "/esg/governance", text: "governance" },
+          { href: "/esg/reporting-channel", text: "reportingChannel" },
+        ],
+      },
+    ],
+  },
 ];

@@ -405,3 +405,216 @@ html {
 .hero5-sound-btn .hero5-sound-icon {
   font-size: 1.75rem;
 }
+
+/* ========== ESG 환경경영 정책 ========== */
+.esg-policy-media {
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+.esg-policy-media .work-img {
+  margin-bottom: 0;
+  line-height: 0;
+}
+.esg-policy-media a.esg-policy-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.esg-policy-media a.esg-policy-download span {
+  font-size: inherit;
+  line-height: 1.2;
+}
+.esg-policy-media a.esg-policy-download .mi-download {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* ========== ESG 신고 채널 ========== */
+.esg-reporting-block .section-title {
+  font-size: 1.35rem;
+}
+.esg-reporting-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+.esg-reporting-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.65rem;
+  top: 0.45em;
+}
+
+/* ========== ESG 제보 폼 (테이블형) ========== */
+.esg-report-form-table {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.esg-report-form-row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.esg-report-form-row--top .esg-report-form-label,
+.esg-report-form-row--top .esg-report-form-field {
+  align-items: flex-start;
+}
+.esg-report-form-label {
+  flex: 0 0 140px;
+  max-width: 140px;
+  padding: 1rem 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.esg-report-form-field {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.esg-report-required {
+  color: #4da3ff;
+  font-weight: 700;
+  line-height: 1;
+}
+.esg-report-name-row,
+.esg-report-phone-row,
+.esg-report-email-row,
+.esg-report-file-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+.esg-report-name-row .form-control {
+  flex: 1;
+  min-width: 160px;
+}
+.esg-report-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+}
+.esg-report-phone-row .esg-report-select {
+  flex: 0 0 90px;
+  max-width: 90px;
+}
+.esg-report-phone-row input.form-control {
+  flex: 0 0 80px;
+  max-width: 100px;
+}
+.esg-report-dash,
+.esg-report-at {
+  color: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+}
+.esg-report-email-row input.form-control {
+  flex: 1;
+  min-width: 100px;
+}
+.esg-report-email-row .esg-report-select {
+  flex: 0 0 130px;
+  max-width: 140px;
+}
+.esg-report-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.esg-report-file-label {
+  flex-shrink: 0;
+  margin: 0 !important;
+  cursor: pointer;
+}
+.esg-report-file-name {
+  font-size: 0.88rem;
+}
+.esg-report-privacy {
+  width: 100%;
+}
+.esg-report-privacy-intro {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+}
+.esg-report-privacy-list {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+.esg-report-privacy-list li {
+  position: relative;
+  padding-left: 0.85rem;
+}
+.esg-report-privacy-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.55);
+}
+.esg-report-privacy .esg-report-privacy-consent {
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+  gap: 0.65rem;
+}
+.esg-report-privacy .esg-report-privacy-consent span {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.esg-report-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .esg-report-form-row {
+    flex-direction: column;
+  }
+  .esg-report-form-label {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+  .esg-report-form-field {
+    width: 100%;
+  }
+}
