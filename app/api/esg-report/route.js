@@ -28,15 +28,18 @@ function createTransporter() {
 
 async function sendViaResend({ to, replyTo, subject, html, text, attachments }) {
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const { data, error } = await resend.emails.send({
-    from: process.env.RESEND_FROM || "TNQ21 ESG 제보 <onboarding@resend.dev>",
+  const payload = {
+    from: process.env.RESEND_FROM || "TNQ21 ESG Report <onboarding@resend.dev>",
     to: [to],
     reply_to: replyTo || undefined,
     subject,
     html,
     text,
-    attachments,
-  });
+  };
+  if (attachments?.length) {
+    payload.attachments = attachments;
+  }
+  const { data, error } = await resend.emails.send(payload);
   if (error) throw new Error(error.message || "Resend send failed");
   return data;
 }
@@ -154,6 +157,13 @@ export async function POST(request) {
 
     const replyTo = email || undefined;
 
+    if (!process.env.RESEND_API_KEY && (!process.env.SMTP_USER || !process.env.SMTP_PASSWORD)) {
+      return NextResponse.json(
+        { success: false, error: "메일 발송 설정이 되어 있지 않습니다. 관리자에게 문의해 주세요." },
+        { status: 503 },
+      );
+    }
+
     if (process.env.RESEND_API_KEY) {
       await sendViaResend({
         to: RECIPIENT_EMAIL,
@@ -163,7 +173,7 @@ export async function POST(request) {
         text,
         attachments: mailAttachments.map((a) => ({
           filename: a.filename,
-          content: a.content,
+          content: a.content.toString("base64"),
         })),
       });
     } else {
@@ -182,6 +192,22 @@ export async function POST(request) {
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("esg-report API error:", err);
+    const msg = err?.message || "";
+    if (
+      msg.includes("only send testing emails to your own") ||
+      msg.includes("verify a domain") ||
+      msg.includes("not authorized") ||
+      msg.includes("Invalid `to`")
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            `Resend 테스트/미인증 도메인에서는 ${RECIPIENT_EMAIL}으로 발송할 수 없습니다. Resend에서 도메인 인증(resend.com/domains) 후 RESEND_FROM을 인증 도메인으로 설정하거나, Vercel 환경 변수에서 RESEND_API_KEY를 제거하고 SMTP를 사용하세요.`,
+        },
+        { status: 503 },
+      );
+    }
     return NextResponse.json(
       { success: false, error: "발송 중 오류가 발생했습니다. 나중에 다시 시도해 주세요." },
       { status: 500 },
