@@ -3,7 +3,7 @@ import ParallaxContainer from "@/components/common/ParallaxContainer";
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
 import Image from "next/image";
-import EsgReportForm from "@/components/forms/EsgReportForm";
+import EsgReportFormClient from "@/components/forms/EsgReportFormClient";
 import { menuTNQ21 } from "@/data/menuTNQ21";
 import { getTranslations } from "next-intl/server";
 
@@ -121,7 +121,7 @@ export default async function TNQ21EsgReportingChannelPage() {
                   <div className="esg-reporting-block mb-40 wow fadeInUp">
                     <h3 className="section-title mb-30">{t("sectionReportTitle")}</h3>
                   </div>
-                  <EsgReportForm />
+                  <EsgReportFormClient />
                 </div>
               </div>
             </section>

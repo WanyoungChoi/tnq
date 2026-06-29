@@ -38,8 +38,10 @@ export default function EsgReportForm() {
   const formRef = useRef(null);
   const openedAtRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [recaptchaReady, setRecaptchaReady] = useState(false);
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [emailDomainMode, setEmailDomainMode] = useState("direct");
+  const [emailDomainDirect, setEmailDomainDirect] = useState("");
   const [fileName, setFileName] = useState("");
   const [privacyConsent, setPrivacyConsent] = useState(false);
   const workplaceOptions = t.raw("formWorkplaceOptions") ?? [];
@@ -48,6 +50,9 @@ export default function EsgReportForm() {
 
   useEffect(() => {
     openedAtRef.current = Date.now();
+    if (RECAPTCHA_SITE_KEY) {
+      setRecaptchaReady(true);
+    }
   }, []);
 
   const getRecaptchaResponse = () => {
@@ -63,7 +68,7 @@ export default function EsgReportForm() {
     const local = form.email_local?.value?.trim();
     const domain =
       emailDomainMode === "direct"
-        ? form.email_domain_direct?.value?.trim()
+        ? emailDomainDirect.trim()
         : emailDomainMode;
     if (!local || !domain) return "";
     return `${local}@${domain}`;
@@ -150,6 +155,7 @@ export default function EsgReportForm() {
       form.reset();
       setIsAnonymous(false);
       setEmailDomainMode("direct");
+      setEmailDomainDirect("");
       setFileName("");
       setPrivacyConsent(false);
       openedAtRef.current = Date.now();
@@ -166,15 +172,17 @@ export default function EsgReportForm() {
     }
   };
 
+  const namePlaceholder = t("formNamePlaceholder");
+
   return (
     <>
-      {RECAPTCHA_SITE_KEY && (
-        <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload" />
+      {RECAPTCHA_SITE_KEY && recaptchaReady && (
+        <Script src="https://www.google.com/recaptcha/api.js" strategy="afterInteractive" />
       )}
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="form esg-report-form wow fadeInUp wch-unset"
+        className="form esg-report-form wch-unset"
         encType="multipart/form-data"
       >
         <div
@@ -193,7 +201,7 @@ export default function EsgReportForm() {
                 name="name"
                 className="input-lg round form-control"
                 disabled={loading || isAnonymous}
-                placeholder={t("formNamePlaceholder")}
+                {...(namePlaceholder ? { placeholder: namePlaceholder } : {})}
               />
               <label className="esg-report-checkbox-label mb-0">
                 <input
@@ -226,16 +234,16 @@ export default function EsgReportForm() {
             <div className="esg-report-email-row">
               <input type="text" name="email_local" className="input-lg round form-control" disabled={loading} />
               <span className="esg-report-at">@</span>
-              {emailDomainMode === "direct" ? (
-                <input
-                  type="text"
-                  name="email_domain_direct"
-                  className="input-lg round form-control"
-                  disabled={loading}
-                />
-              ) : (
-                <input type="hidden" name="email_domain_direct" value="" />
-              )}
+              <input
+                type="text"
+                name="email_domain_direct"
+                className="input-lg round form-control"
+                value={emailDomainDirect}
+                onChange={(e) => setEmailDomainDirect(e.target.value)}
+                disabled={loading || emailDomainMode !== "direct"}
+                hidden={emailDomainMode !== "direct"}
+                aria-hidden={emailDomainMode !== "direct"}
+              />
               <select
                 name="email_domain_select"
                 className="input-lg round form-control esg-report-select"
@@ -321,7 +329,7 @@ export default function EsgReportForm() {
           </FormRow>
         </div>
 
-        {RECAPTCHA_SITE_KEY && (
+        {RECAPTCHA_SITE_KEY && recaptchaReady && (
           <div className="esg-report-recaptcha mt-30">
             <div className="g-recaptcha" data-sitekey={RECAPTCHA_SITE_KEY} data-theme="dark" />
           </div>

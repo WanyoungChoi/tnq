@@ -462,6 +462,9 @@ html {
 }
 
 /* ========== ESG 제보 폼 (테이블형) ========== */
+.esg-report-form-skeleton {
+  min-height: 520px;
+}
 .esg-report-form-table {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }

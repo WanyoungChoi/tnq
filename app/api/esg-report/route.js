@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { Resend } from "resend";
 
-const RECIPIENT_EMAIL = "tnq500@naver.com";
+const RECIPIENT_EMAIL = "rokmc815@tnp21.com";
 const MIN_SUBMIT_SECONDS = 3;
 const MAX_SUBMIT_SECONDS = 3600;
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
